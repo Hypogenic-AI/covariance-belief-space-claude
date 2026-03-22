@@ -1,0 +1,26 @@
+\section{Related Work}
+\label{sec:related}
+
+\para{LLM opinion simulation.}
+A growing body of work uses LLMs to simulate human survey responses.
+Santurkar \etal~\cite{santurkar2023whose} introduced \opinionqa, a benchmark of 1,498 Pew survey questions, and found that LLM responses most closely align with liberal, college-educated demographics.
+Argyle \etal~\cite{argyle2023out} showed that LLMs conditioned on demographic backstories can approximate survey response distributions (``silicon sampling'').
+Karanjai \etal~\cite{karanjai2025synthesizing} improved persona fidelity using HEXACO personality profiles and RAG-enhanced prompting.
+Rozado~\cite{rozado2025measuring} confirmed a consistent left-leaning bias across LLMs using multiple assessment methods.
+We build on this line of work by using LLM-simulated personas not to replicate individual survey responses, but to estimate the full covariance structure of belief space.
+
+\para{Belief structure and dimensionality.}
+The question of how many independent opinion dimensions exist has a long history in political science.
+Converse~\cite{converse1964nature} argued that mass belief systems are largely unstructured, while subsequent work identified stable ideological dimensions.
+The World Values Survey~\cite{inglehart2005modernization} identified two principal axes---traditional vs.\ secular-rational and survival vs.\ self-expression---from factor analysis of $\sim$250 value items across 100+ countries.
+Benkler \etal~\cite{benkler2023assessing} used these WVS dimensions to assess moral value pluralism in LLMs, finding significant misalignment with non-Western populations.
+Our work extends this tradition by applying PCA to a much larger and more diverse set of \nbeliefs beliefs, revealing a richer dimensional structure than the two-axis WVS model.
+
+\para{LLMs as models of attitude correlations.}
+Most directly relevant to our work, Ma and Powell~\cite{ma2025llm} demonstrated that GPT-4o can recreate pairwise correlations among 64 human attitudes with $r = 0.77$ fidelity, even for semantically dissimilar beliefs. This validates using LLMs as proxies for the human attitude covariance structure.
+Suh \etal~\cite{suh2025language} fine-tuned LLMs on the SubPOP dataset (3,362 questions, 70K subpopulation-response pairs) and found that learned ``belief embeddings'' cluster meaningfully, suggesting a low-dimensional latent structure.
+Our contribution extends Ma and Powell's pairwise correlation analysis to full PCA decomposition and scales beyond Suh \etal's item count by an order of magnitude.
+
+\para{AI-augmented surveys.}
+Kim \etal~\cite{kim2023aiaugmented} proposed using LLMs to address the curse of dimensionality in survey research, and Banisch and Shamon~\cite{banisch2022validating} validated computational opinion formation models against survey experiments.
+Our dimensionality results have direct implications for this agenda: if 25 belief dimensions capture 90\% of conditional influence, then AI-augmented surveys can reconstruct full belief profiles from sparse questionnaires.

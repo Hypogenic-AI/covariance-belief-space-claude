@@ -1,0 +1,26 @@
+{
+  "embedding_pca": {
+    "n_beliefs": 9993,
+    "embedding_dim": 1536,
+    "components_for_90pct": 380,
+    "kaiser": 251,
+    "pc1_variance": 0.0405563288871143
+  },
+  "response_pca": {
+    "n_personas": 300,
+    "n_beliefs": 300,
+    "components_for_90pct": 93,
+    "kaiser": 60,
+    "pc1_variance": 0.2864060042665837
+  },
+  "conditional_pca": {
+    "n_anchors": 50,
+    "n_test_beliefs": 100,
+    "components_for_90pct": 25,
+    "mean_abs_diff": 1.035
+  },
+  "random_baseline": {
+    "components_for_90pct": 154
+  },
+  "key_finding": "Belief space is dramatically lower-dimensional than random. Response PCA needs 93 components for 90% variance (vs 154 for random). The conditional experiment shows only 25 dimensions of belief influence explain 90% of how beliefs affect each other. PC1 (28.6%) maps to a progressive-conservative axis."
+}

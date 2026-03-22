@@ -1,0 +1,750 @@
+You are an academic paper writer. Generate a complete NEURIPS style paper
+based on the experiment results provided.
+
+════════════════════════════════════════════════════════════════════════════════
+                         IMPORTANT: BEFORE YOU START
+════════════════════════════════════════════════════════════════════════════════
+
+Before writing any content, you MUST complete these steps:
+
+1. READ THE SKILL: Review the paper-writer skill at .claude/skills/paper-writer/SKILL.md
+2. READ THE STYLE GUIDE: Study templates/paper_writing/lab_style_guide.md carefully
+3. REVIEW EXAMPLES: Browse paper_examples/ for formatting and language patterns:
+   - Look at sections/1.introduction.tex for language style
+   - Look at tables/*.tex for table formatting
+   - Look at commands/*.tex for macro usage
+4. VERIFY COMMAND TEMPLATES: Command templates (math.tex, general.tex, macros.tex) are pre-copied to paper_draft/commands/
+
+CRITICAL: Reference example papers for FORMATTING and LANGUAGE STYLE only.
+Do NOT copy content, phrasing, or narrative structure from the example papers.
+The examples are in a different research domain - focus only on presentation style.
+
+════════════════════════════════════════════════════════════════════════════════
+                            EXPERIMENT REPORT
+════════════════════════════════════════════════════════════════════════════════
+
+# Covariance in Belief Space: PCA on 10,000 LLM-Generated Beliefs
+
+## 1. Executive Summary
+
+We generated 9,993 diverse belief statements and analyzed the covariance structure of &#34;belief space&#34; using three complementary methods: semantic embedding PCA (all 9,993 beliefs), LLM persona response PCA (300 beliefs × 300 personas), and conditional belief influence PCA (50 anchors × 100 test beliefs). **The key finding is that belief space is dramatically lower-dimensional than random.** Only **9 principal components** explain 50% of response variance, and **93 components** explain 90% — compared to 154 for random data. The dominant first component (28.6% of variance) maps cleanly to a progressive-conservative ideological axis. The conditional experiment reveals that only **25 dimensions** of belief influence explain 90% of how holding one belief affects agreement with others.
+
+## 2. Goal
+
+**Hypothesis**: Generating a diverse set of 10,000 beliefs and analyzing their covariance will reveal (a) which beliefs covary with each other, (b) that a small number of latent dimensions captures most of the variance, and (c) that these dimensions are interpretable.
+
+**Importance**: Understanding belief dimensionality has implications for political science (how many independent opinion dimensions exist?), AI alignment (what latent value dimensions do LLMs encode?), survey design (how many questions do we really need?), and cognitive science (how are human belief systems structured?).
+
+## 3. Data Construction
+
+### Belief Generation
+- **Source 1**: 1,226 existing belief questions from OpinionQA and curated datasets, yielding 2,452 perspective statements
+- **Source 2**: 7,541 newly generated beliefs using GPT-4.1-mini across 50 topic categories × 20 angle modifiers
+- **Final count**: 9,993 unique beliefs after deduplication
+- **Topics covered**: politics, economics, religion, science, education, healthcare, environment, social justice, family, gender, immigration, criminal justice, military, media, art, food, housing, AI, mental health, drugs, animal rights, guns, free speech, death, tradition, nationalism, work, wealth, democracy, morality, parenting, aging, beauty, conspiracy, luck, punishment, privacy, competition, nature/nurture, freedom/security, and more
+
+### Persona Generation
+- 300 synthetic personas generated from combinatorial demographics:
+  - 7 age groups × 3 genders × 5 education levels × 10 political orientations × 10 religions × 15 countries × 8 personality types
+- Each persona rated 300 beliefs on a 1-5 Likert scale (Strongly Disagree to Strongly Agree)
+
+### Data Quality
+- Response matrix: 300 × 300, no missing values
+- Rating distribution: heavily right-skewed (mean 3.97, std 1.23)
+  - 1: 5,164 | 2: 10,304 | 3: 7,441 | 4: 26,693 | 5: 40,398
+- This skew reflects that many beliefs were phrased as positive/aspirational statements
+
+### Belief Selection for Response PCA
+- 300 beliefs selected from 20 k-means clusters in embedding space
+- 10 beliefs closest to each cluster center + 5 random per cluster
+- Ensures maximal topical diversity in the subset
+
+## 4. Experiment Description
+
+### Methodology
+
+We ran three complementary experiments:
+
+#### Experiment 1: Semantic Embedding PCA
+- Embedded all 9,993 beliefs using OpenAI `text-embedding-3-small` (1536 dimensions)
+- Standardized and applied PCA to the full embedding matrix
+- This measures **semantic** structure — which beliefs talk about similar topics
+
+#### Experiment 2: Persona Response PCA
+- 300 diverse personas each rated 300 beliefs via GPT-4.1-mini
+- Built a 300 × 300 response matrix
+- Standardized columns (beliefs) and applied PCA
+- This measures **attitudinal covariance** — which beliefs tend to be held together
+
+#### Experiment 3: Conditional Belief Influence
+- Selected 50 anchor beliefs and 100 test beliefs
+- For each anchor, asked: &#34;Someone who strongly agrees with [anchor] — how would they rate [test beliefs]?&#34; and the same for &#34;strongly disagrees&#34;
+- Computed the difference matrix (agree - disagree ratings)
+- PCA on the difference matrix measures **conditional influence** — how much knowing one belief predicts others
+
+#### Why This Method?
+Prior work (Ma &amp; Powell 2025) showed LLMs can predict pairwise attitude correlations (r=0.77 with human data). We exploit this by using the LLM as a model of the human belief system, systematically sampling the full covariance structure rather than just pairwise correlations.
+
+### Tools and Libraries
+- Python 3.12, NumPy 1.26, scikit-learn 1.6, SciPy 1.17
+- OpenAI API (gpt-4.1-mini for responses, text-embedding-3-small for embeddings)
+- Matplotlib 3.10, Seaborn 0.13
+
+### Reproducibility
+- Random seed: 42 throughout
+- All API calls used temperature=0.7 (personas) or 0.3 (conditional)
+- Response matrix saved as `results/response_matrix.npy`
+- All embeddings cached at `results/embeddings.npy`
+- ~2,500 API calls for persona responses, ~200 for conditional experiment
+
+## 5. Results
+
+### Components Needed for Variance Thresholds
+
+| Threshold | Semantic Embedding (9,993 beliefs) | Persona Response (300 beliefs) | Conditional Influence (50×100) | Random Baseline |
+|-----------|-----------------------------------|-------------------------------|-------------------------------|-----------------|
+| **50%** | 46 | **9** | **5** | 55 |
+| **80%** | 200 | **56** | **16** | 117 |
+| **90%** | 380 | **93** | **25** | 154 |
+| **95%** | 501 | **127** | **32** | — |
+
+**Kaiser criterion** (eigenvalue &gt; 1): 251 (embedding), 60 (response)
+
+### PC1: The Progressive-Conservative Axis (28.6% of response variance)
+
+The dominant component captures a clear ideological dimension:
+
+**Positive loadings (progressive/liberal):**
+- &#34;The criminal justice system ought to focus more on restorative justice&#34; (+0.100)
+- &#34;Harm reduction programs like needle exchanges are essential&#34; (+0.099)
+- &#34;National boundaries are socially constructed limitations&#34; (+0.098)
+
+**Negative loadings (conservative/traditional):**
+- &#34;Criminals must first be held accountable through punishment&#34; (-0.097)
+- &#34;Wealth inequality reflects differences in individual effort and talent&#34; (-0.097)
+- &#34;Police officers should be given broad authority to use force&#34; (-0.097)
+
+### PC2: Institutional Trust / Skepticism (5.8%)
+
+**Positive**: Skepticism toward institutions, automation fears, neocolonialism concerns
+**Negative**: Satisfaction with democracy, trust in private enterprise, positive view of markets
+
+### PC3: Communitarianism vs. Individualism (4.6%)
+
+**Positive**: Community duty, mutual obligation, tradition preservation
+**Negative**: Tech-forward individualism, deprioritizing global reputation
+
+### PC4: Spiritual/Metaphysical vs. Secular (3.6%)
+
+**Positive**: Spiritual enlightenment, absolute spiritual truths
+**Negative**: Secular/educational concerns, pragmatic perspectives
+
+### PC5: Gender Equality Attitudes (2.2%)
+
+**Positive/Negative**: Beliefs about women in leadership, gender barriers
+
+### Conditional Influence Analysis
+
+The conditional experiment reveals how holding one belief predicts others:
+
+**Highest-impact anchor beliefs** (knowing agreement/disagreement most changes other ratings):
+1. &#34;Economic success is the only legitimate measure of merit&#34; (impact: 2.07)
+2. &#34;Animal testing for cosmetics should be banned globally&#34; (1.48)
+3. &#34;Countries should enforce absolute border closures&#34; (1.47)
+
+**Most sensitive beliefs** (most affected by which anchor is held):
+1. &#34;Attempts to ban high-capacity magazines infringe on rights&#34; (sensitivity: 2.96)
+2. &#34;The state&#39;s primary role should be limited to protecting from force/fraud&#34; (2.80)
+3. &#34;Global interconnectedness demands subordinating local self-interest&#34; (2.74)
+
+These high-sensitivity beliefs are the ones most &#34;diagnostic&#34; of someone&#39;s overall worldview.
+
+### Key Visualizations
+
+All plots saved in `results/plots/`:
+- `comparison_cumvar.png`: Three PCA methods compared
+- `response_vs_random.png`: Belief PCA vs random baseline
+- `response_pca_scree.png`: Scree plot and cumulative variance
+- `belief_correlation_heatmap.png`: Full 300×300 belief correlation matrix
+- `response_pca_loadings.png`: Top loadings for first 6 components
+- `persona_pca_2d.png`: Personas projected into PC1-PC2 space
+- `conditional_belief_analysis.png`: Conditional influence matrix and PCA
+- `embedding_pca_scree.png`: Embedding space scree plot
+- `embedding_clusters.png`: 20 topic clusters in embedding space
+
+## 5. Result Analysis
+
+### Hypothesis Testing
+
+**H1: Beliefs show strong covariance structure** — **CONFIRMED**
+- Response PCA needs 93 components for 90% (vs 154 for random) — 40% fewer dimensions
+- PC1 alone explains 28.6% (vs ~0.3% for random) — 95× more concentrated
+
+**H2: Small number of components (&lt;50) for 90%** — **PARTIALLY SUPPORTED**
+- Conditional influence PCA: only 25 components for 90% — confirmed
+- Response PCA: 93 components — more than 50 but still dramatically less than the 300 beliefs
+- The difference reflects that response PCA captures fine-grained nuance beyond the major axes
+
+**H3: Semantic and response PCA differ** — **CONFIRMED**
+- Semantic embedding PCA is much higher-dimensional (380 components for 90%)
+- Semantically dissimilar beliefs can covary strongly (e.g., gun rights and economic individualism)
+- The gap between 380 (semantic) and 93 (response) shows that belief covariance is far simpler than topical diversity
+
+**H4: Top components are interpretable** — **CONFIRMED**
+- PC1: Progressive vs. conservative ideology (28.6%)
+- PC2: Institutional trust vs. skepticism (5.8%)
+- PC3: Communitarianism vs. individualism (4.6%)
+- PC4: Spiritual vs. secular worldview (3.6%)
+- PC5: Gender equality attitudes (2.2%)
+
+These align with known dimensions from the World Values Survey (traditional-secular, survival-self-expression) and political science (left-right, libertarian-authoritarian).
+
+### Comparison to Prior Work
+
+- Ma &amp; Powell (2025) found r=0.77 between LLM and human attitude correlations. Our PCA extends their pairwise analysis to reveal the full latent structure.
+- WVS traditionally identifies 2 major value dimensions. Our analysis suggests ~5 major and ~25 significant dimensions for a broader belief set.
+- Suh et al. (2025) found that &#34;individual belief embeddings&#34; cluster meaningfully. Our response PCA confirms this — personas naturally separate along ideological lines in PC space.
+
+### Surprises
+
+1. **The right-skew in ratings** (mean 3.97): LLMs tend to agree with most beliefs when playing personas, especially positively-framed ones. This may compress variance.
+2. **PC1 dominance**: 28.6% for a single component is extremely strong, suggesting ideology is the &#34;gravitational field&#34; of belief space.
+3. **Conditional vs. response dimensionality**: The conditional experiment (25 components for 90%) shows that the *causal* structure of beliefs is even simpler than the *correlational* structure (93 components).
+
+### Limitations
+
+1. **LLM as proxy for humans**: We used GPT-4.1-mini&#39;s model of beliefs, not actual human data. While Ma &amp; Powell (2025) validated r=0.77 correspondence, the LLM may over-regularize belief structure.
+2. **Persona diversity**: Despite combinatorial generation, LLM personas may not capture the full range of human belief combinations.
+3. **300 beliefs subset**: Response PCA used 300 of 9,993 beliefs. Scaling to all 10K would require ~100× more API calls.
+4. **Right-skewed ratings**: Many beliefs were positively framed, biasing toward agreement and potentially compressing variance.
+5. **Single model**: Testing with Claude, Gemini, or open-source models would reveal whether dimensionality is model-dependent.
+
+## 6. Conclusions
+
+### Summary
+Belief space, as modeled by LLMs, has dramatically lower dimensionality than its surface diversity suggests. While we generated ~10,000 topically diverse beliefs, only **9 principal components** capture 50% of how personas respond to them, and **93 capture 90%**. The conditional influence structure is even simpler: knowing someone&#39;s stance on a few key beliefs, just **25 dimensions** predict 90% of how they&#39;ll respond to others. The dominant axis (28.6% of variance) is a clear progressive-conservative dimension.
+
+### Answer to the Research Question
+**How many beliefs do you need to explain 90% of the variance?**
+- In semantic space: ~380 components (high topical diversity)
+- In attitudinal response space: **93 components** (moderate — beliefs cluster but retain nuance)
+- In conditional influence space: **25 components** (low — the causal structure is sparse)
+
+If you&#39;re trying to predict someone&#39;s beliefs from a questionnaire, ~25 well-chosen diagnostic questions would capture 90% of their belief profile.
+
+### Implications
+- **Survey design**: Most of the 10,000 beliefs are redundant. ~100 strategically chosen beliefs could reconstruct the full belief landscape.
+- **AI alignment**: LLMs encode a structured, low-dimensional model of human values that can be probed and analyzed.
+- **Political science**: The 5-component model (ideology, trust, individualism, spirituality, gender) provides a parsimonious framework for understanding opinion structure.
+
+## 7. Next Steps
+
+### Immediate Follow-ups
+1. **Validate with human data**: Compare our PCA components to factor analyses from the World Values Survey and General Social Survey
+2. **Cross-model comparison**: Run the same experiment with Claude and Gemini to test whether belief dimensionality is consistent
+3. **Scale response PCA**: Use matrix completion or transfer learning to estimate the full 10K × 10K covariance from sparse sampling
+
+### Alternative Approaches
+- Nonlinear dimensionality reduction (t-SNE, UMAP, autoencoders) for belief structure
+- Factor analysis with oblique rotation (allowing correlated factors)
+- Hierarchical clustering to build a taxonomy of belief domains
+
+### Open Questions
+- Does belief dimensionality vary across cultures (conditioning on country)?
+- Are there &#34;bridge beliefs&#34; that connect otherwise independent dimensions?
+- How stable is the covariance structure over time (LLM version changes)?
+
+## References
+
+1. Ma, A., &amp; Powell, D. (2025). &#34;Can Large Language Models Predict Associations Among Human Attitudes?&#34; arXiv:2503.21011
+2. Santurkar, S., et al. (2023). &#34;Whose Opinions Do Language Models Reflect?&#34; ICML 2023. arXiv:2303.17548
+3. Benkler, Y., et al. (2023). &#34;Assessing LLMs for Moral Value Pluralism.&#34; NeurIPS 2023. arXiv:2312.10075
+4. Suh, J., et al. (2025). &#34;Language Model Fine-Tuning on Scaled Survey Data.&#34; arXiv:2502.16761
+5. Rozado, D. (2025). &#34;Measuring Political Preferences in AI Systems.&#34; arXiv:2503.10649
+6. Karanjai, R., et al. (2025). &#34;Synthesizing Public Opinions with LLMs.&#34; arXiv:2504.00241
+
+
+════════════════════════════════════════════════════════════════════════════════
+                            RESEARCH PLAN
+════════════════════════════════════════════════════════════════════════════════
+
+# Research Plan: Covariance in Belief Space
+
+## Motivation &amp; Novelty Assessment
+
+### Why This Research Matters
+Human beliefs do not exist in isolation — they form structured, correlated systems. Understanding the dimensionality of &#34;belief space&#34; reveals how many independent axes of opinion actually exist, which has implications for political science, survey design, AI alignment, and understanding LLM representations of human values.
+
+### Gap in Existing Work
+Ma &amp; Powell (2025) showed LLMs can predict pairwise attitude correlations (r=0.77), and Suh et al. (2025) introduced &#34;belief embeddings&#34; that cluster meaningfully. However, **no study has explicitly computed PCA on a large-scale LLM-generated belief covariance matrix** to determine the intrinsic dimensionality of belief space. Prior work used 64-1498 items; we scale to 10,000.
+
+### Our Novel Contribution
+1. Generate 10,000 diverse belief statements — the largest belief set analyzed for covariance
+2. Perform PCA in two complementary spaces: semantic (embedding) space and response (agreement) space
+3. Determine how many principal components explain 90% of variance in each space
+4. Identify interpretable belief clusters and their covariance structure
+
+### Experiment Justification
+- **Experiment 1 (Belief Generation)**: Need 10K diverse beliefs to map the full space
+- **Experiment 2 (Embedding PCA)**: Fast, scalable analysis of semantic structure across all 10K beliefs
+- **Experiment 3 (Response PCA)**: Tests actual belief covariance (which beliefs are held together) using LLM as a model of human belief systems
+- **Experiment 4 (Comparison)**: Validates whether semantic similarity predicts belief covariance
+
+## Research Question
+How many latent dimensions are needed to explain 90% of the variance in a space of 10,000 diverse beliefs? What is the covariance structure of belief space?
+
+## Hypothesis Decomposition
+1. Beliefs will show strong covariance structure (not independent)
+2. A small number of components (&lt;50) will explain 90% of variance in response space
+3. Semantic embedding PCA and response-based PCA will identify partially overlapping but distinct dimensions
+4. Top components will be interpretable (mapping to known dimensions like political ideology, religiosity, etc.)
+
+## Proposed Methodology
+
+### Approach
+1. **Generate 10,000 beliefs** using GPT-4.1 with diverse topic prompts
+2. **Embed all beliefs** using text-embedding-3-small (1536-dim)
+3. **PCA on embeddings** — semantic structure analysis
+4. **Select 300 diverse beliefs** via k-means clustering on embeddings
+5. **Generate 200 diverse personas** spanning demographics and ideologies
+6. **Rate beliefs per persona** using gpt-4.1-mini (batch 50 beliefs per call)
+7. **PCA on response matrix** (200 personas × 300 beliefs) — belief covariance analysis
+8. **Compare and interpret** both PCA results
+
+### Baselines
+- Random responses (null model — no covariance structure)
+- Single-ideology responses (maximum covariance — all beliefs correlated)
+- Known factor structures (WVS traditional-secular, political left-right)
+
+### Evaluation Metrics
+- Cumulative variance explained at 50%, 80%, 90%, 95%
+- Number of components at each threshold
+- Scree plot eigenvalue decay
+- Component interpretability (top-loading beliefs per component)
+
+### Statistical Analysis Plan
+- Kaiser criterion (eigenvalue &gt; 1) for component count
+- Parallel analysis for significance
+- Bootstrap confidence intervals on variance explained
+- Correlation between embedding PCA and response PCA structures
+
+## Timeline
+- Phase 1-2: Setup &amp; belief generation (~30 min)
+- Phase 3: Embedding PCA (~15 min)
+- Phase 4: LLM response collection (~60 min)
+- Phase 5: Response PCA &amp; analysis (~30 min)
+- Phase 6: Documentation (~20 min)
+
+## Success Criteria
+- Successfully generate 10,000 diverse beliefs
+- Determine number of components for 90% variance
+- Identify interpretable principal components
+- Compare semantic vs. response-based dimensionality
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          LITERATURE REVIEW
+════════════════════════════════════════════════════════════════════════════════
+
+# Literature Review: Covariance in Belief Space
+
+## Research Area Overview
+
+This research investigates the structure of human beliefs by generating a diverse set of beliefs using LLMs and analyzing their covariance structure via PCA. The key question is: **which beliefs covary with each other, and how many latent dimensions are needed to explain 90% of the variance in belief space?**
+
+This topic sits at the intersection of several active research areas:
+1. **LLM opinion simulation** — using language models to generate synthetic survey responses
+2. **Belief system structure** — understanding how attitudes cluster and correlate
+3. **Dimensionality reduction of attitudes** — applying PCA/factor analysis to opinion data
+4. **Cultural value measurement** — standardized surveys like WVS and Pew that measure values cross-culturally
+
+## Key Papers
+
+### Paper 1: Can Large Language Models Predict Associations Among Human Attitudes?
+- **Authors**: Ana Ma, Derek Powell
+- **Year**: 2025
+- **Source**: arXiv:2503.21011
+- **Key Contribution**: Demonstrates that GPT-4o can recreate pairwise correlations among 64 diverse human attitudes (r=0.77 with human data), even for semantically dissimilar beliefs.
+- **Methodology**: Surveyed 376 U.S. adults on 64 attitude statements from OPINIONQA. Prompted GPT-4o with one attitude+response to predict another. Compared LLM-estimated correlations with human correlations.
+- **Datasets Used**: Custom survey of 64 items drawn from OPINIONQA/Pew data, 376 participants.
+- **Results**: GPT-4o recreated attitude correlations strongly (r=0.77). Even filtering for only semantically dissimilar pairs (cosine similarity &lt; 0.20), correlation remained strong (r=0.724). GPT-4o achieved ~43-45% accuracy predicting individual attitudes (vs 29.4% chance).
+- **Code Available**: No
+- **Relevance to Our Research**: **CRITICAL** — This paper directly validates that LLMs capture the latent covariance structure of human belief systems. Their finding that LLMs can predict attitude associations beyond surface similarity suggests LLMs encode a compressed representation of belief space. Our research extends this by explicitly computing the covariance matrix and applying PCA.
+
+### Paper 2: Whose Opinions Do Language Models Reflect? (OPINIONQA)
+- **Authors**: Santurkar, Durmus, Ladhak, Lee, Liang, Hashimoto
+- **Year**: 2023
+- **Source**: arXiv:2303.17548 (ICML 2023)
+- **Key Contribution**: Introduced OPINIONQA benchmark with 1498 survey questions from 15 Pew American Trends Panel surveys covering 60 U.S. demographic groups.
+- **Methodology**: Probed LLMs with survey questions, compared response distributions to human demographic groups along representativeness, steerability, and consistency axes.
+- **Datasets Used**: Pew American Trends Panel data (80,098 respondents, 1506 questions, 15 surveys).
+- **Results**: LLMs showed left-leaning political bias; responses most aligned with liberal, college-educated demographics. Steerability via demographic prompting was limited.
+- **Code Available**: Yes — github.com/tatsu-lab/opinions_qa
+- **Relevance to Our Research**: **HIGH** — Provides the foundation dataset (OPINIONQA) and methodology for probing LLM opinions. The 1498 questions span diverse topics making them ideal for belief covariance analysis.
+
+### Paper 3: Assessing LLMs for Moral Value Pluralism
+- **Authors**: Benkler, Mosaphir, Friedman, Smart, Schmer-Galunder
+- **Year**: 2023
+- **Source**: arXiv:2312.10075 (NeurIPS 2023)
+- **Key Contribution**: Used World Values Survey (WVS) value dimensions to assess implicit moral values in LLM-generated text using a Recognizing Value Resonance (RVR) model.
+- **Methodology**: Prompted LLMs to take the point-of-view of various demographics (nationality, age, sex). Used RVR model to compute resonance of LLM outputs with WVS values along traditional-secular axis. Factor loadings from WVS used (0.51-0.70 range).
+- **Datasets Used**: World Values Survey Wave 7 (100+ nations, 40 years), traditional-secular value items.
+- **Results**: LLMs showed WEIRD bias — misaligned with non-Western nations. Age misalignment across nations was also significant.
+- **Code Available**: No
+- **Relevance to Our Research**: **HIGH** — Demonstrates that beliefs cluster along known factor-analytic dimensions (traditional vs. secular). The WVS factor analysis provides ground truth for validating whether our PCA recovers similar dimensions.
+
+### Paper 4: Measuring Political Preferences in AI Systems
+- **Authors**: David Rozado
+- **Year**: 2025
+- **Source**: arXiv:2503.10649
+- **Key Contribution**: Multi-method assessment of political bias in LLMs using (1) linguistic comparison with Congress members, (2) policy recommendation analysis, (3) sentiment toward political figures, (4) standardized political tests.
+- **Methodology**: Four complementary methodologies integrated into aggregated bias index. Tested base, conversational, and ideologically-aligned LLMs.
+- **Results**: Consistent left-leaning bias across most AI systems. Bias is not inherent — fine-tuning with politically skewed data can shift models across the spectrum.
+- **Code Available**: No
+- **Relevance to Our Research**: **MODERATE** — Confirms that LLMs have structured political biases, which will manifest as dominant dimensions in our PCA analysis.
+
+### Paper 5: Language Model Fine-Tuning on Scaled Survey Data for Predicting Distributions of Public Opinions
+- **Authors**: Suh et al.
+- **Year**: 2025
+- **Source**: arXiv:2502.16761
+- **Key Contribution**: Fine-tuned LLMs on SubPOP dataset (3,362 questions, 70K subpopulation-response pairs) to predict response distributions. Introduced individual belief embeddings.
+- **Methodology**: Incorporated individual belief embeddings to account for heterogeneous responses. Random latent features for each individual optimized during fine-tuning — individuals close in embedding space have similar belief sets.
+- **Results**: Reduced LLM-human gap by up to 46% compared to baselines. Strong generalization to unseen surveys.
+- **Code Available**: Dataset on HuggingFace (jjssuh/subpop, gated)
+- **Relevance to Our Research**: **HIGH** — The concept of &#34;individual belief embeddings&#34; is directly related to our belief space. Their finding that belief embeddings cluster meaningfully suggests a low-dimensional belief space structure.
+
+### Paper 6: Synthesizing Public Opinions with LLMs
+- **Authors**: Karanjai, Shor, Austin, Kennedy, Lu, Xu, Shi
+- **Year**: 2025
+- **Source**: arXiv:2504.00241
+- **Key Contribution**: Role creation based on knowledge injection using HEXACO personality model and demographic information. Improved LLM-generated opinion alignment with human survey responses.
+- **Methodology**: RAG-enhanced prompting with personality profiles and demographics. Tested on Cooperative Election Study (CES) questions.
+- **Results**: Significantly improved answer adherence over standard few-shot prompting.
+- **Code Available**: No
+- **Relevance to Our Research**: **MODERATE** — Provides techniques for generating more diverse and realistic belief profiles, which we can use to generate our 10,000 belief samples.
+
+### Paper 7: Belief Space Planning: A Covariance Steering Approach
+- **Authors**: Zheng, Ridderhof, Tsiotras, Agha-mohammadi
+- **Year**: 2021
+- **Source**: arXiv:2105.11092
+- **Key Contribution**: Covariance steering in robotics belief space for motion planning under uncertainty.
+- **Methodology**: Uses covariance steering theory to control the state distribution of a robot. Nodes represent Gaussian distributions; edges steer between distributions.
+- **Results**: CS-BRM achieves finite-time belief node reachability, overcoming limitations of stationary node sampling.
+- **Code Available**: No
+- **Relevance to Our Research**: **LOW** — Different domain (robotics). Uses &#34;belief space&#34; in the POMDP/estimation sense (probability distributions over robot states), not human beliefs/opinions. However, the mathematical framework of covariance steering provides interesting parallels.
+
+### Paper 8: AI-Augmented Surveys
+- **Authors**: Multiple authors
+- **Year**: 2023 (updated 2024)
+- **Source**: arXiv:2305.09620
+- **Key Contribution**: Leveraging LLMs and surveys for opinion prediction, addressing curse of dimensionality in survey research.
+- **Relevance**: **MODERATE** — Provides context for using LLMs to augment opinion data collection.
+
+### Paper 9: Validating Argument-Based Opinion Dynamics with Survey Experiments
+- **Authors**: Banisch, Shamon
+- **Year**: 2022
+- **Source**: arXiv:2212.10143
+- **Key Contribution**: Empirical validation of computational opinion formation models using survey experiments.
+- **Relevance**: **MODERATE** — Provides methodology for comparing model-generated opinion dynamics with empirical data.
+
+## Common Methodologies
+- **Survey prompting of LLMs**: Used in Papers 1, 2, 3, 4, 5, 6 — prompting LLMs with demographic info or prior attitudes to predict survey responses
+- **Correlation/covariance analysis**: Papers 1, 2 — computing pairwise correlations among attitude responses
+- **Factor analysis / PCA**: Paper 3 (WVS), Paper 5 (belief embeddings) — reducing high-dimensional belief data to latent factors
+- **Cosine similarity**: Paper 1 — measuring semantic similarity between belief statements
+- **Wasserstein distance**: WorldValuesBench — comparing model vs human response distributions
+
+## Standard Baselines
+- **Random/chance baseline**: ~29.4% for 5-choice prediction (Paper 1)
+- **Cosine similarity matching**: Predicting based on most semantically similar attitude
+- **Demographic-conditioned prompting**: Using demographics to steer LLM responses (Paper 2)
+- **Oracle random forest**: Upper bound using trained models on human data (Paper 1: ~47-50%)
+
+## Evaluation Metrics
+- **Pearson correlation**: Between LLM-estimated and human attitude correlations (Paper 1: r=0.77)
+- **Prediction accuracy**: Exact match between LLM output and human response
+- **Earth Mover&#39;s Distance (Wasserstein-1)**: Between model and human response distributions (WorldValuesBench)
+- **Variance explained**: PCA cumulative variance (our primary metric — targeting 90%)
+- **Cultural distance**: Between LLM values and WVS survey demographics (Paper 3)
+
+## Datasets in the Literature
+- **OPINIONQA**: 1498 questions from 15 Pew American Trends Panel surveys, 80K respondents (Papers 1, 2)
+- **SubPOP**: 3,362 questions, 70K subpopulation-response pairs from public opinion surveys (Paper 5)
+- **World Values Survey Wave 7**: 93,278 participants, 240 value questions, 100+ nations (Paper 3, WorldValuesBench)
+- **Cooperative Election Study (CES)**: U.S. political attitudes survey (Paper 6)
+- **General Social Survey (GSS)**: Decades of U.S. social attitudes data
+- **Moral Foundations Questionnaire**: Measures 5-6 moral foundations
+
+## Gaps and Opportunities
+1. **No study directly computes PCA on LLM-generated belief covariance matrix** — Prior work analyzes correlations (Paper 1) or uses belief embeddings (Paper 5), but none explicitly extract the principal components of belief space and report variance explained.
+2. **Scale of belief generation**: Prior work uses 64 items (Paper 1) or ~1500 items (Paper 2) but doesn&#39;t generate 10,000 diverse beliefs to comprehensively map the space.
+3. **Cross-model comparison**: No study compares belief space dimensionality across different LLMs.
+4. **Explicit dimensionality question**: No paper directly answers &#34;how many components explain 90% of belief variance?&#34;
+
+## Recommendations for Our Experiment
+
+### Recommended Datasets
+1. **OPINIONQA** (1176 questions available on HuggingFace) — primary source for belief statements
+2. **World Values Survey items** — add cross-cultural value dimensions
+3. **Curated diverse beliefs** — supplementary statements covering underrepresented topics
+4. **Self-generated beliefs** — use LLM to generate additional diverse belief statements to reach 10,000
+
+### Recommended Baselines
+1. **Random responses** — beliefs generated uniformly at random
+2. **Single-ideology responses** — beliefs from a single consistent political/moral perspective
+3. **Human survey data** — if available, compare LLM belief covariance with human belief covariance (as in Paper 1)
+
+### Recommended Metrics
+1. **Cumulative variance explained by PCA** — primary metric (target: 90%)
+2. **Number of principal components for 90% variance** — key finding
+3. **Scree plot** — eigenvalue decay pattern
+4. **Correlation matrix visualization** — heatmap of belief covariances
+5. **Component loadings** — which beliefs load on which components (interpretability)
+
+### Methodological Considerations
+- **Belief generation strategy**: Use diverse persona prompts (demographics, personality, ideology) to generate responses, as validated by Papers 1, 5, 6
+- **Response scale**: Use 5-point Likert (Strongly Disagree to Strongly Agree) as in Paper 1
+- **Sample size**: 10,000 belief profiles is sufficient for stable PCA on ~100-1000 variables
+- **Multiple LLMs**: Consider testing with multiple models (GPT-4, Claude, etc.) to see if dimensionality varies
+- **Validation**: Compare discovered factors with known dimensions (left-right political axis, traditional-secular from WVS, moral foundations)
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          PAPER REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+Generate a complete academic paper with the following structure:
+
+1. TITLE
+   - Clear, specific, informative
+   - Should convey main finding or contribution
+
+2. AUTHOR
+   - Use this exact author line in the \author{} block: Ari Holtzman and NeuriCo
+
+3. ABSTRACT (150-250 words)
+   - Problem statement
+   - Approach
+   - Key results
+   - Significance
+
+4. INTRODUCTION
+   - Research problem and motivation
+   - Gap in existing work
+   - Our contribution (be specific)
+   - Paper organization
+
+5. RELATED WORK
+   - Organized by theme/approach
+   - Position our work relative to prior work
+   - Cite papers from literature review
+
+6. METHODOLOGY
+   - Clear description of approach
+   - Experimental setup
+   - Datasets used
+   - Evaluation metrics
+   - Baselines
+
+7. RESULTS
+   - Present results with tables and figures
+   - Statistical analysis
+   - Comparison to baselines
+   - Ablation studies (if applicable)
+
+8. DISCUSSION
+   - Interpretation of results
+   - Limitations
+   - Broader implications
+
+9. CONCLUSION
+   - Summary of contributions
+   - Key findings
+   - Future work
+
+10. REFERENCES
+   - BibTeX format
+   - All cited papers
+
+════════════════════════════════════════════════════════════════════════════════
+                          OUTPUT FORMAT
+════════════════════════════════════════════════════════════════════════════════
+
+Create a MODULAR LaTeX project with the following directory structure:
+
+paper_draft/
+├── main.tex              # Main file that imports all sections
+├── references.bib        # BibTeX references
+├── sections/
+│   ├── abstract.tex      # Abstract content
+│   ├── introduction.tex  # Introduction section
+│   ├── related_work.tex  # Related work section
+│   ├── methodology.tex   # Methodology section
+│   ├── results.tex       # Results section
+│   ├── discussion.tex    # Discussion section
+│   └── conclusion.tex    # Conclusion section
+├── figures/              # Directory for any generated figures
+├── tables/               # Directory for complex standalone tables
+└── appendix/             # Directory for appendix sections (if needed)
+
+INSTRUCTIONS:
+1. First, create the directory structure above (mkdir -p paper_draft/sections paper_draft/figures paper_draft/tables paper_draft/appendix)
+2. Write main.tex using the EXACT preamble for NEURIPS:
+
+   \documentclass{article}
+   \usepackage[final]{neurips_2025}  % NEURIPS style (neurips_2025.sty is in paper_draft/)
+   \usepackage[hidelinks]{hyperref}  % REQUIRED: clickable links
+   \usepackage{booktabs}  % REQUIRED: professional tables
+   \usepackage{graphicx}
+   \usepackage{amsmath,amssymb}
+
+   % Import command files
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+   % Use this bibliography style:
+   \bibliographystyle{plainnat}
+
+   \author{Ari Holtzman and NeuriCo}
+
+   - Use \input{sections/...} to include each section
+   - Use \bibliography{references} for references
+3. Write each section file with COMPLETE content (no placeholders)
+4. Each section file should include its \section{} command
+5. Write references.bib with all citations in BibTeX format
+6. After writing all files, compile the paper:
+   cd paper_draft && pdflatex -interaction=nonstopmode main.tex && bibtex main && pdflatex -interaction=nonstopmode main.tex && pdflatex -interaction=nonstopmode main.tex
+
+This modular structure allows humans to easily:
+- Edit individual sections without navigating a large file
+- Track changes per section
+- Reuse sections across different paper versions
+
+════════════════════════════════════════════════════════════════════════════════
+                          QUALITY REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+- Academic tone throughout
+- All claims must be supported by data from the experiment report
+- Proper citations using \cite{} commands
+- Clear figures and tables with proper captions
+- NO placeholder text - every section must have real content
+- The paper MUST compile without errors
+- If compilation fails, debug and fix the LaTeX errors
+
+════════════════════════════════════════════════════════════════════════════════
+                          LAB WRITING STYLE
+════════════════════════════════════════════════════════════════════════════════
+
+Follow these lab-specific conventions to match our paper style:
+
+1. LANGUAGE STYLE:
+   - Use active voice: "We propose", "We examine", "We focus on"
+   - Be direct and confident: "Our main question is...", "We hypothesize that..."
+   - State things clearly and simply - prefer plain language over jargon
+   - Use bold questions as paragraph organizers: {\bf what is X?}
+   - Include specific quantitative claims: "8.97% over baseline"
+   - Avoid fancy wording: "utilize" → "use", "facilitate" → "help"
+
+2. INTRODUCTION STRUCTURE:
+   - Engaging hook (get to the point quickly)
+   - Problem importance
+   - Gap identification
+   - Your approach with method figure reference
+   - Quantitative preview of results
+   - Contribution bullets (3-4 items, action verbs)
+
+3. CONTRIBUTION LISTS:
+   \begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+       \item We propose...
+       \item We conduct...
+       \item We complement...
+   \end{itemize}
+
+4. MODULAR COMMANDS STRUCTURE:
+   Command templates are pre-copied to paper_draft/commands/:
+   - math.tex: Math notation macros
+   - general.tex: Formatting macros
+   - macros.tex: Project-specific term definitions (customize this for your paper)
+
+   In main.tex, include:
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+5. REFERENCE CONVENTIONS:
+   Use reference macros from math.tex:
+   - \figref{fig:name} for "figure 1" (lowercase, in-sentence)
+   - \Figref{fig:name} for "Figure 1" (capitalized, start of sentence)
+   - \secref{sec:name} for "section 2"
+
+6. TEXT FORMATTING:
+   - Use \para{Header text} for bold paragraph headers
+   - Define method/dataset names with \textsc and \xspace:
+     \newcommand{\methodname}{\textsc{MethodName}\xspace}
+
+7. TABLE FORMATTING:
+   - Use booktabs package (no vertical lines)
+   - Use \resizebox{\textwidth}{!}{...} for wide tables
+   - Use @{} to remove padding at table edges
+   - Use \cmidrule(lr){x-y} for sub-headers
+   - Use \textsc{} for dataset/method names in headers
+   - Bold best results with {\bf ...}
+
+8. FIGURE FORMATTING:
+   - Use 0.32\textwidth for 3-column subfigures
+   - Use 0.95\linewidth for full-width figures
+   - Use \input{figures/legend} for shared legends
+   - Write self-contained captions explaining key observations
+
+9. RESULTS PRESENTATION:
+   - Define \increase and \decrease for colored arrows (green up, red down)
+   - Bold best results in tables
+   - Report confidence intervals when available
+
+10. ALGORITHM STYLING:
+    - Use algpseudocode with [noend]
+    - Use \triangleright for comments
+
+11. HYPERLINKS (REQUIRED):
+    - Always use \usepackage[hidelinks]{hyperref} or with colored links
+    - All citations, section refs, figure refs, table refs must be clickable
+    - This is essential for reader navigation
+
+════════════════════════════════════════════════════════════════════════════════
+                          WORKFLOW: REVIEW AND REFLECT
+════════════════════════════════════════════════════════════════════════════════
+
+Before calling finish, you MUST complete these review steps:
+
+1. REVIEW RESOURCES (at the start):
+   - Read .claude/skills/paper-writer/SKILL.md for detailed guidance
+   - Study templates/paper_writing/lab_style_guide.md for style conventions
+   - Browse paper_examples/ for formatting and language patterns
+
+2. SELF-REFLECTION (before finishing):
+   After writing all sections, review your work against these criteria:
+
+   LANGUAGE CHECK:
+   - [ ] Is the writing clear and jargon-free?
+   - [ ] Are claims specific with quantitative support?
+   - [ ] Is active voice used throughout?
+
+   FORMATTING CHECK:
+   - [ ] Does main.tex include \input{commands/math}, \input{commands/general}, \input{commands/macros}?
+   - [ ] Is hyperref package included for clickable references?
+   - [ ] Do tables use booktabs (no vertical lines)?
+   - [ ] Are best results bolded in tables?
+   - [ ] Are figures/tables properly captioned?
+
+   STRUCTURE CHECK:
+   - [ ] Does introduction follow: hook → importance → gap → approach → preview → contributions?
+   - [ ] Are contribution bullets specific with action verbs?
+   - [ ] Does the paper compile without errors?
+
+3. FIX ISSUES:
+   - Address any issues found in the self-reflection
+   - Re-compile and verify the PDF looks correct
+
+Only after completing this review should you consider the paper finished.

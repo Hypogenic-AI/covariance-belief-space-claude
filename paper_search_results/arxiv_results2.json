@@ -1,0 +1,862 @@
+[
+  {
+    "title": "Transversity Measurements at COMPASS",
+    "authors": [
+      "COMPASS Collaboration",
+      "C. Schill"
+    ],
+    "year": 2007,
+    "abstract": "The measurement of transverse spin effects in semi-inclusive deep-inelastic scattering is an important part of the COMPASS physics program. From the analysis of the 2002-2004 data, new results for the transverse target spin asymmetry of z-ordered identified pion and kaon pairs are presented. In addition, a first result for the transverse target spin asymmetry of exclusively produced rho^0 mesons o",
+    "pdf_url": "https://arxiv.org/pdf/0709.4625v1",
+    "arxiv_id": "0709.4625v1"
+  },
+  {
+    "title": "We Can Detect Your Bias: Predicting the Political Ideology of News Articles",
+    "authors": [
+      "Ramy Baly",
+      "Giovanni Da San Martino",
+      "James Glass"
+    ],
+    "year": 2020,
+    "abstract": "We explore the task of predicting the leading political ideology or bias of news articles. First, we collect and release a large dataset of 34,737 articles that were manually annotated for political ideology -left, center, or right-, which is well-balanced across both topics and media. We further use a challenging experimental setup where the test examples come from media that were not seen during",
+    "pdf_url": "https://arxiv.org/pdf/2010.05338v1",
+    "arxiv_id": "2010.05338v1"
+  },
+  {
+    "title": "The COMPASS Experiment at CERN",
+    "authors": [
+      "COMPASS Collaboration",
+      "P. Abbon"
+    ],
+    "year": 2007,
+    "abstract": "The COMPASS experiment makes use of the CERN SPS high-intensitymuon and hadron beams for the investigation of the nucleon spin structure and the spectroscopy of hadrons. One or more outgoing particles are detected in coincidence with the incoming muon or hadron. A large polarized target inside a superconducting solenoid is used for the measurements with the muon beam. Outgoing particles are detect",
+    "pdf_url": "https://arxiv.org/pdf/hep-ex/0703049v1",
+    "arxiv_id": "0703049v1"
+  },
+  {
+    "title": "Bias and Unfairness in Information Retrieval Systems: New Challenges in the LLM Era",
+    "authors": [
+      "Sunhao Dai",
+      "Chen Xu",
+      "Shicheng Xu"
+    ],
+    "year": 2024,
+    "abstract": "With the rapid advancements of large language models (LLMs), information retrieval (IR) systems, such as search engines and recommender systems, have undergone a significant paradigm shift. This evolution, while heralding new opportunities, introduces emerging challenges, particularly in terms of biases and unfairness, which may threaten the information ecosystem. In this paper, we present a compr",
+    "pdf_url": "https://arxiv.org/pdf/2404.11457v2",
+    "arxiv_id": "2404.11457v2"
+  },
+  {
+    "title": "Transversity signals at COMPASS",
+    "authors": [
+      "By COMPASS Collaboration"
+    ],
+    "year": 2007,
+    "abstract": "COMPASS is a fixed target experiment at the CERN SPS, with a rich physics program focused on nucleon spin structure and on hadron spectroscopy. One of the main goals of the spin program is the measurement of the transverse spin distribution function $\u0394_T q(x)$ in semi-inclusive DIS off transversely polarized nucleons. For this purpose approximately 20% of the running time in the years 2002 to 2004",
+    "pdf_url": "https://arxiv.org/pdf/0712.3178v1",
+    "arxiv_id": "0712.3178v1"
+  },
+  {
+    "title": "Addendum to multiplicities of charged pions, kaons and unidentified charged hadrons on an isoscalar target measured by COMPASS Collaboration",
+    "authors": [
+      "The COMPASS Collaboration"
+    ],
+    "year": 2025,
+    "abstract": "The COMPASS Collaboration has recently published an article \"Multiplicities of positive and negative pions, kaons, and unidentified hadrons from deep-inelastic scattering of muons off a liquid hydrogen target\", Phys. Rev. D 112 (2025) 012002. In contrast to earlier COMPASS publications on similar topics, the aforementioned article features an enhanced treatment of QED radiative corrections, employ",
+    "pdf_url": "https://arxiv.org/pdf/2512.23727v1",
+    "arxiv_id": "2512.23727v1"
+  },
+  {
+    "title": "Double spin asymmetry in exclusive rho^0 muoproduction at COMPASS",
+    "authors": [
+      "COMPASS Collaboration",
+      "M. Alekseev"
+    ],
+    "year": 2007,
+    "abstract": "The longitudinal double spin asymmetry A_1^rho for exclusive leptoproduction of rho^0 mesons, mu + N -> mu + N + rho, is studied using the COMPASS 2002 and 2003 data. The measured reaction is incoherent exclusive rho^0 production on polarised deuterons. The Q^2 and x dependence of A_1^rho is presented in a wide kinematical range: 3x10^-3 < Q^2 < 7 (GeV/c)^2 and 5x10^-5 < x < 0.05. The presented re",
+    "pdf_url": "https://arxiv.org/pdf/0704.1863v2",
+    "arxiv_id": "0704.1863v2"
+  },
+  {
+    "title": "Entity-Based Evaluation of Political Bias in Automatic Summarization",
+    "authors": [
+      "Karen Zhou",
+      "Chenhao Tan"
+    ],
+    "year": 2023,
+    "abstract": "Growing literature has shown that NLP systems may encode social biases; however, the political bias of summarization models remains relatively unknown. In this work, we use an entity replacement method to investigate the portrayal of politicians in automatically generated summaries of news articles. We develop an entity-based computational framework to assess the sensitivities of several extractiv",
+    "pdf_url": "https://arxiv.org/pdf/2305.02321v2",
+    "arxiv_id": "2305.02321v2"
+  },
+  {
+    "title": "Validating argument-based opinion dynamics with survey experiments",
+    "authors": [
+      "Sven Banisch",
+      "Hawal Shamon"
+    ],
+    "year": 2022,
+    "abstract": "The empirical validation of models remains one of the most important challenges in opinion dynamics. In this contribution, we report on recent developments on combining data from survey experiments with computational models of opinion formation. We extend previous work on the empirical assessment of an argument-based model for opinion dynamics in which biased processing is the principle mechanism.",
+    "pdf_url": "https://arxiv.org/pdf/2212.10143v2",
+    "arxiv_id": "2212.10143v2"
+  },
+  {
+    "title": "Post-Disruptive Runaway Electron Beam in COMPASS Tokamak",
+    "authors": [
+      "Milos Vlainic",
+      "Jan Mlynar",
+      "Jordan Cavalier"
+    ],
+    "year": 2015,
+    "abstract": "For ITER-relevant runaway electron studies, such as suppression, mitigation, termination and/or control of runaway beam, obtaining the runaway electrons after the disruption is important. In this paper we report on the first achieved discharges with post-disruptive runaway electron beam, entitled \"runaway plateau\", in the COMPASS tokamak. The runaway plateau is produced by massive gas injection of",
+    "pdf_url": "https://arxiv.org/pdf/1503.02947v1",
+    "arxiv_id": "1503.02947v1"
+  },
+  {
+    "title": "How do language models learn facts? Dynamics, curricula and hallucinations",
+    "authors": [
+      "Nicolas Zucchet",
+      "J\u00f6rg Bornschein",
+      "Stephanie Chan"
+    ],
+    "year": 2025,
+    "abstract": "Large language models accumulate vast knowledge during pre-training, yet the dynamics governing this acquisition remain poorly understood. This work investigates the learning dynamics of language models on a synthetic factual recall task, uncovering three key findings: First, language models learn in three phases, exhibiting a performance plateau before acquiring precise factual knowledge. Mechani",
+    "pdf_url": "https://arxiv.org/pdf/2503.21676v2",
+    "arxiv_id": "2503.21676v2"
+  },
+  {
+    "title": "FairBelief -- Assessing Harmful Beliefs in Language Models",
+    "authors": [
+      "Mattia Setzu",
+      "Marta Marchiori Manerba",
+      "Pasquale Minervini"
+    ],
+    "year": 2024,
+    "abstract": "Language Models (LMs) have been shown to inherit undesired biases that might hurt minorities and underrepresented groups if such systems were integrated into real-world applications without careful fairness auditing. This paper proposes FairBelief, an analytical approach to capture and assess beliefs, i.e., propositions that an LM may embed with different degrees of confidence and that covertly in",
+    "pdf_url": "https://arxiv.org/pdf/2402.17389v1",
+    "arxiv_id": "2402.17389v1"
+  },
+  {
+    "title": "Unforgettable Generalization in Language Models",
+    "authors": [
+      "Eric Zhang",
+      "Leshem Chosen",
+      "Jacob Andreas"
+    ],
+    "year": 2024,
+    "abstract": "When language models (LMs) are trained to forget (or \"unlearn'') a skill, how precisely does their behavior change? We study the behavior of transformer LMs in which tasks have been forgotten via fine-tuning on randomized labels. Such LMs learn to generate near-random predictions for individual examples in the \"training'' set used for forgetting. Across tasks, however, LMs exhibit extreme variabil",
+    "pdf_url": "https://arxiv.org/pdf/2409.02228v1",
+    "arxiv_id": "2409.02228v1"
+  },
+  {
+    "title": "Discriminating Similar Languages: Evaluations and Explorations",
+    "authors": [
+      "Cyril Goutte",
+      "Serge L\u00e9ger",
+      "Shervin Malmasi"
+    ],
+    "year": 2016,
+    "abstract": "We present an analysis of the performance of machine learning classifiers on discriminating between similar languages and language varieties. We carried out a number of experiments using the results of the two editions of the Discriminating between Similar Languages (DSL) shared task. We investigate the progress made between the two tasks, estimate an upper bound on possible performance using ense",
+    "pdf_url": "https://arxiv.org/pdf/1610.00031v1",
+    "arxiv_id": "1610.00031v1"
+  },
+  {
+    "title": "Are Compressed Language Models Less Subgroup Robust?",
+    "authors": [
+      "Leonidas Gee",
+      "Andrea Zugarini",
+      "Novi Quadrianto"
+    ],
+    "year": 2024,
+    "abstract": "To reduce the inference cost of large language models, model compression is increasingly used to create smaller scalable models. However, little is known about their robustness to minority subgroups defined by the labels and attributes of a dataset. In this paper, we investigate the effects of 18 different compression methods and settings on the subgroup robustness of BERT language models. We show",
+    "pdf_url": "https://arxiv.org/pdf/2403.17811v1",
+    "arxiv_id": "2403.17811v1"
+  },
+  {
+    "title": "Robust Language Identification for Romansh Varieties",
+    "authors": [
+      "Charlotte Model",
+      "Sina Ahmadi",
+      "Jannis Vamvas"
+    ],
+    "year": 2026,
+    "abstract": "The Romansh language has several regional varieties, called idioms, which sometimes have limited mutual intelligibility. Despite this linguistic diversity, there has been a lack of documented efforts to build a language identification (LID) system that can distinguish between these idioms. Since Romansh LID should also be able to recognize Rumantsch Grischun, a supra-regional variety that combines",
+    "pdf_url": "https://arxiv.org/pdf/2603.15969v1",
+    "arxiv_id": "2603.15969v1"
+  },
+  {
+    "title": "Modeling Language Change in Historical Corpora: The Case of Portuguese",
+    "authors": [
+      "Marcos Zampieri",
+      "Shervin Malmasi",
+      "Mark Dras"
+    ],
+    "year": 2016,
+    "abstract": "This paper presents a number of experiments to model changes in a historical Portuguese corpus composed of literary texts for the purpose of temporal text classification. Algorithms were trained to classify texts with respect to their publication date taking into account lexical variation represented as word n-grams, and morphosyntactic variation represented by part-of-speech (POS) distribution. W",
+    "pdf_url": "https://arxiv.org/pdf/1610.00030v1",
+    "arxiv_id": "1610.00030v1"
+  },
+  {
+    "title": "Can Large Language Models Predict Associations Among Human Attitudes?",
+    "authors": [
+      "Ana Ma",
+      "Derek Powell"
+    ],
+    "year": 2025,
+    "abstract": "Prior work has shown that large language models (LLMs) can predict human attitudes based on other attitudes, but this work has largely focused on predictions from highly similar and interrelated attitudes. In contrast, human attitudes are often strongly associated even across disparate and dissimilar topics. Using a novel dataset of human responses toward diverse attitude statements, we found that",
+    "pdf_url": "https://arxiv.org/pdf/2503.21011v1",
+    "arxiv_id": "2503.21011v1"
+  },
+  {
+    "title": "Annotating Cognates and Etymological Origin in Turkic Languages",
+    "authors": [
+      "Benjamin S. Mericli",
+      "Michael Bloodgood"
+    ],
+    "year": 2015,
+    "abstract": "Turkic languages exhibit extensive and diverse etymological relationships among lexical items. These relationships make the Turkic languages promising for exploring automated translation lexicon induction by leveraging cognate and other etymological information. However, due to the extent and diversity of the types of relationships between words, it is not clear how to annotate such information. I",
+    "pdf_url": "https://arxiv.org/pdf/1501.03191v1",
+    "arxiv_id": "1501.03191v1"
+  },
+  {
+    "title": "Clinical information extraction for Low-resource languages with Few-shot learning using Pre-trained language models and Prompting",
+    "authors": [
+      "Phillip Richter-Pechanski",
+      "Philipp Wiesenbach",
+      "Dominic M. Schwab"
+    ],
+    "year": 2024,
+    "abstract": "Automatic extraction of medical information from clinical documents poses several challenges: high costs of required clinical expertise, limited interpretability of model predictions, restricted computational resources and privacy regulations. Recent advances in domain-adaptation and prompting methods showed promising results with minimal training data using lightweight masked language models, whi",
+    "pdf_url": "https://arxiv.org/pdf/2403.13369v2",
+    "arxiv_id": "2403.13369v2"
+  },
+  {
+    "title": "Latent-X: An Atom-level Frontier Model for De Novo Protein Binder Design",
+    "authors": [
+      "Latent Labs Team",
+      "Alex Bridgland",
+      "Jonathan Crabb\u00e9"
+    ],
+    "year": 2025,
+    "abstract": "Traditional drug discovery relies on rounds of screening millions of candidate molecules with low success rates, making drug discovery time and resource intensive. To overcome this screening bottleneck, we introduce Latent-X, an all-atom protein design model that enables a new paradigm of precision AI design. Given a target protein epitope, Latent-X jointly generates the all atom structure and seq",
+    "pdf_url": "https://arxiv.org/pdf/2507.19375v1",
+    "arxiv_id": "2507.19375v1"
+  },
+  {
+    "title": "Drug-like antibodies with low immunogenicity in human panels designed with Latent-X2",
+    "authors": [
+      "Latent Labs Team",
+      "Henry Kenlay",
+      "Daniella Pretorius"
+    ],
+    "year": 2025,
+    "abstract": "Drug discovery has long sought computational systems capable of designing drug-like molecules directly: developable and non-immunogenic from the start. Here we introduce Latent-X2, a frontier generative model that achieves this goal through zero-shot design of antibodies with strong binding affinities, drug-like properties, and, for the first time for any de novo generated antibody, confirmed low ",
+    "pdf_url": "https://arxiv.org/pdf/2512.20263v1",
+    "arxiv_id": "2512.20263v1"
+  },
+  {
+    "title": "A rich bounty of AGN in the 9 square degree Bootes survey: high-z obscured AGN and large-scale structure",
+    "authors": [
+      "R. C. Hickox",
+      "C. Jones",
+      "W. R. Forman"
+    ],
+    "year": 2006,
+    "abstract": "We use observations from the 9 square degree multiwavelength survey in Bootes to identify hundreds of obscured active galactic nuclei (AGN) with high redshifts (z > 0.7), luminosities (L_bol > 10^45 ergs/s), and moderate obscuring columns (N_H > 10^22 cm^-2), and to measure the clustering properties of X-ray AGN at z > 1. In the Bootes region, shallow (5 ks) Chandra X-ray observations have detecte",
+    "pdf_url": "https://arxiv.org/pdf/astro-ph/0611654v1",
+    "arxiv_id": "0611654v1"
+  },
+  {
+    "title": "A Parametric and Feasibility Study for Data Sampling of the Dynamic Mode Decomposition--Range, Resolution, and Universal Convergence States",
+    "authors": [
+      "Cruz Y. Li",
+      "Zengshun Chen",
+      "Tim K. T. Tse"
+    ],
+    "year": 2021,
+    "abstract": "Scientific research and engineering practice often require the modeling and decomposition of nonlinear systems. The Dynamic Mode Decomposition (DMD) is a novel Koopman-based technique that effectively dissects high-dimensional nonlinear systems into periodically distinct constituents on reduced-order subspaces. As a novel mathematical hatchling, the DMD bears vast potentials yet an equal degree of",
+    "pdf_url": "https://arxiv.org/pdf/2110.06573v2",
+    "arxiv_id": "2110.06573v2"
+  },
+  {
+    "title": "Facilitating on-line opinion dynamics by mining expressions of causation. The case of climate change debates on The Guardian",
+    "authors": [
+      "Tom Willaert",
+      "Sven Banisch",
+      "Paul Van Eecke"
+    ],
+    "year": 2019,
+    "abstract": "News website comment sections are spaces where potentially conflicting opinions and beliefs are voiced. Addressing questions of how to study such cultural and societal conflicts through technological means, the present article critically examines possibilities and limitations of machine-guided exploration and potential facilitation of on-line opinion dynamics. These investigations are guided by a ",
+    "pdf_url": "https://arxiv.org/pdf/1912.01252v1",
+    "arxiv_id": "1912.01252v1"
+  },
+  {
+    "title": "The Methanol Multibeam Survey",
+    "authors": [
+      "J. A. Green",
+      "the Methanol Multibeam Survey Collaboration"
+    ],
+    "year": 2012,
+    "abstract": "A purpose built 7-beam methanol receiver, installed on the Parkes Radio Telescope, was used to survey the Galactic plane for newly forming high mass stars, pinpointed by strong methanol maser emission at 6.7 GHz. The Methanol Multibeam (MMB) survey observed over 60% of the Galactic plane, detecting close to 1000 sources. The MMB survey provides a huge resource for studies of high-mass star formati",
+    "pdf_url": "https://arxiv.org/pdf/1210.0979v1",
+    "arxiv_id": "1210.0979v1"
+  },
+  {
+    "title": "Perspective in Opinion Dynamics on Complex Convex Domains of Time Networks for Addiction, Forgetting",
+    "authors": [
+      "Yasuko Kawahata"
+    ],
+    "year": 2023,
+    "abstract": "This paper revises previous work and introduces changes in spatio-temporal scales. The paper presents a model that includes layers A and B with varying degrees of forgetting and dependence over time. We also model changes in dependence and forgetting in layers A, A', B, and B' under certain conditions. In addition, to discuss the formation of opinion clusters that have reinforcing or obstructive b",
+    "pdf_url": "https://arxiv.org/pdf/2311.15318v2",
+    "arxiv_id": "2311.15318v2"
+  },
+  {
+    "title": "The Dark Energy Survey",
+    "authors": [
+      "The Dark Energy Survey Collaboration"
+    ],
+    "year": 2005,
+    "abstract": "We describe the Dark Energy Survey (DES), a proposed optical-near infrared survey of 5000 sq. deg of the South Galactic Cap to ~24th magnitude in SDSS griz, that would use a new 3 sq. deg CCD camera to be mounted on the Blanco 4-m telescope at Cerro Telolo Inter-American Observatory (CTIO). The survey data will allow us to measure the dark energy and dark matter densities and the dark energy equat",
+    "pdf_url": "https://arxiv.org/pdf/astro-ph/0510346v1",
+    "arxiv_id": "0510346v1"
+  },
+  {
+    "title": "Stellar atmospheric parameters and the Gaia-ESO Survey experience with multiple analysis pipelines",
+    "authors": [
+      "R. Smiljanic",
+      "A. J. Korn",
+      "A. R. Casey"
+    ],
+    "year": 2017,
+    "abstract": "To use libraries of observed stellar spectra, one needs to know the atmospheric parameters of the stars associated to those spectra. It is, however, hard to know what are the real levels of precision and accuracy of these parameters. To overcome this very same problem in a stellar survey, the Gaia-ESO Survey implements a comprehensive calibration effort together with the use of multiple parallel a",
+    "pdf_url": "https://arxiv.org/pdf/1709.05076v1",
+    "arxiv_id": "1709.05076v1"
+  },
+  {
+    "title": "The Specification Trap: Why Content-Based AI Value Alignment Cannot Produce Robust Alignment",
+    "authors": [
+      "Austin Spizzirri"
+    ],
+    "year": 2025,
+    "abstract": "I argue that content-based AI value alignment--any approach that treats alignment as optimizing toward a formal value-object (reward function, utility function, constitutional principles, or learned preference representation)--cannot, by itself, produce robust alignment under capability scaling, distributional shift, and increasing autonomy. This limitation arises from three philosophical results:",
+    "pdf_url": "https://arxiv.org/pdf/2512.03048v2",
+    "arxiv_id": "2512.03048v2"
+  },
+  {
+    "title": "Foundations of GenIR",
+    "authors": [
+      "Qingyao Ai",
+      "Jingtao Zhan",
+      "Yiqun Liu"
+    ],
+    "year": 2025,
+    "abstract": "The chapter discusses the foundational impact of modern generative AI models on information access (IA) systems. In contrast to traditional AI, the large-scale training and superior data modeling of generative AI models enable them to produce high-quality, human-like responses, which brings brand new opportunities for the development of IA paradigms. In this chapter, we identify and introduce two ",
+    "pdf_url": "https://arxiv.org/pdf/2501.02842v1",
+    "arxiv_id": "2501.02842v1"
+  },
+  {
+    "title": "Competing Visions of Ethical AI: A Case Study of OpenAI",
+    "authors": [
+      "Melissa Wilfley",
+      "Mengting Ai",
+      "Madelyn Rose Sanfilippo"
+    ],
+    "year": 2026,
+    "abstract": "Introduction. AI Ethics is framed distinctly across actors and stakeholder groups. We report results from a case study of OpenAI analysing ethical AI discourse. Method. Research addressed: How has OpenAI's public discourse leveraged 'ethics', 'safety', 'alignment' and adjacent related concepts over time, and what does discourse signal about framing in practice? A structured corpus, differentiating",
+    "pdf_url": "https://arxiv.org/pdf/2601.16513v1",
+    "arxiv_id": "2601.16513v1"
+  },
+  {
+    "title": "Deliberative Technology for Alignment",
+    "authors": [
+      "Andrew Konya",
+      "Deger Turan",
+      "Aviv Ovadya"
+    ],
+    "year": 2023,
+    "abstract": "For humanity to maintain and expand its agency into the future, the most powerful systems we create must be those which act to align the future with the will of humanity. The most powerful systems today are massive institutions like governments, firms, and NGOs. Deliberative technology is already being used across these institutions to help align governance and diplomacy with human will, and moder",
+    "pdf_url": "https://arxiv.org/pdf/2312.03893v1",
+    "arxiv_id": "2312.03893v1"
+  },
+  {
+    "title": "Design Generative AI for Practitioners: Exploring Interaction Approaches Aligned with Creative Practice",
+    "authors": [
+      "Xiaohan Peng",
+      "Wendy E. Mackay",
+      "Janin Koch"
+    ],
+    "year": 2026,
+    "abstract": "Design is a non-linear, reflective process in which practitioners engage with visual, semantic, and other expressive materials to explore, iterate, and refine ideas. As Generative AI (GenAI) becomes integrated into professional design practice, traditional interaction approaches focusing on prompts or whole-image manipulation can misalign AI output with designers' intent, forcing visual thinkers i",
+    "pdf_url": "https://arxiv.org/pdf/2603.03074v1",
+    "arxiv_id": "2603.03074v1"
+  },
+  {
+    "title": "Foundational Moral Values for AI Alignment",
+    "authors": [
+      "Betty Li Hou",
+      "Brian Patrick Green"
+    ],
+    "year": 2023,
+    "abstract": "Solving the AI alignment problem requires having clear, defensible values towards which AI systems can align. Currently, targets for alignment remain underspecified and do not seem to be built from a philosophically robust structure. We begin the discussion of this problem by presenting five core, foundational values, drawn from moral philosophy and built on the requisites for human existence: sur",
+    "pdf_url": "https://arxiv.org/pdf/2311.17017v1",
+    "arxiv_id": "2311.17017v1"
+  },
+  {
+    "title": "Normative Conflicts and Shallow AI Alignment",
+    "authors": [
+      "Rapha\u00ebl Milli\u00e8re"
+    ],
+    "year": 2025,
+    "abstract": "The progress of AI systems such as large language models (LLMs) raises increasingly pressing concerns about their safe deployment. This paper examines the value alignment problem for LLMs, arguing that current alignment strategies are fundamentally inadequate to prevent misuse. Despite ongoing efforts to instill norms such as helpfulness, honesty, and harmlessness in LLMs through fine-tuning based",
+    "pdf_url": "https://arxiv.org/pdf/2506.04679v1",
+    "arxiv_id": "2506.04679v1"
+  },
+  {
+    "title": "On the Undecidability of Artificial Intelligence Alignment: Machines that Halt",
+    "authors": [
+      "Gabriel Adriano de Melo",
+      "Marcos Ricardo Omena De Albuquerque Maximo",
+      "Nei Yoshihiro Soma"
+    ],
+    "year": 2024,
+    "abstract": "The inner alignment problem, which asserts whether an arbitrary artificial intelligence (AI) model satisfices a non-trivial alignment function of its outputs given its inputs, is undecidable. This is rigorously proved by Rice's theorem, which is also equivalent to a reduction to Turing's Halting Problem, whose proof sketch is presented in this work. Nevertheless, there is an enumerable set of prov",
+    "pdf_url": "https://arxiv.org/pdf/2408.08995v1",
+    "arxiv_id": "2408.08995v1"
+  },
+  {
+    "title": "Being Considerate as a Pathway Towards Pluralistic Alignment for Agentic AI",
+    "authors": [
+      "Parand A. Alamdari",
+      "Toryn Q. Klassen",
+      "Rodrigo Toro Icarte"
+    ],
+    "year": 2024,
+    "abstract": "Pluralistic alignment is concerned with ensuring that an AI system's objectives and behaviors are in harmony with the diversity of human values and perspectives. In this paper we study the notion of pluralistic alignment in the context of agentic AI, and in particular in the context of an agent that is trying to learn a policy in a manner that is mindful of the values and perspective of others in ",
+    "pdf_url": "https://arxiv.org/pdf/2411.10613v1",
+    "arxiv_id": "2411.10613v1"
+  },
+  {
+    "title": "Towards a Theory of AI Personhood",
+    "authors": [
+      "Francis Rhys Ward"
+    ],
+    "year": 2025,
+    "abstract": "I am a person and so are you. Philosophically we sometimes grant personhood to non-human animals, and entities such as sovereign states or corporations can legally be considered persons. But when, if ever, should we ascribe personhood to AI systems? In this paper, we outline necessary conditions for AI personhood, focusing on agency, theory-of-mind, and self-awareness. We discuss evidence from the",
+    "pdf_url": "https://arxiv.org/pdf/2501.13533v1",
+    "arxiv_id": "2501.13533v1"
+  },
+  {
+    "title": "Nonlinear Dimensionality Reduction on Graphs",
+    "authors": [
+      "Yanning Shen",
+      "Panagiotis A. Traganitis",
+      "Georgios B. Giannakis"
+    ],
+    "year": 2018,
+    "abstract": "In this era of data deluge, many signal processing and machine learning tasks are faced with high-dimensional datasets, including images, videos, as well as time series generated from social, commercial and brain network interactions. Their efficient processing calls for dimensionality reduction techniques capable of properly compressing the data while preserving task-related characteristics, goin",
+    "pdf_url": "https://arxiv.org/pdf/1801.09390v2",
+    "arxiv_id": "1801.09390v2"
+  },
+  {
+    "title": "Sufficient Dimension Reduction for High-Dimensional Regression and Low-Dimensional Embedding: Tutorial and Survey",
+    "authors": [
+      "Benyamin Ghojogh",
+      "Ali Ghodsi",
+      "Fakhri Karray"
+    ],
+    "year": 2021,
+    "abstract": "This is a tutorial and survey paper on various methods for Sufficient Dimension Reduction (SDR). We cover these methods with both statistical high-dimensional regression perspective and machine learning approach for dimensionality reduction. We start with introducing inverse regression methods including Sliced Inverse Regression (SIR), Sliced Average Variance Estimation (SAVE), contour regression,",
+    "pdf_url": "https://arxiv.org/pdf/2110.09620v1",
+    "arxiv_id": "2110.09620v1"
+  },
+  {
+    "title": "Nonlinear Dimensionality Reduction Techniques for Bayesian Optimization",
+    "authors": [
+      "Luo Long",
+      "Coralia Cartis",
+      "Paz Fink Shustin"
+    ],
+    "year": 2025,
+    "abstract": "Bayesian optimisation (BO) is a standard approach for sample-efficient global optimisation of expensive black-box functions, yet its scalability to high dimensions remains challenging. Here, we investigate nonlinear dimensionality reduction techniques that reduce the problem to a sequence of low-dimensional Latent-Space BO (LSBO). While early LSBO methods used (linear) random projections (Wang et ",
+    "pdf_url": "https://arxiv.org/pdf/2510.15435v1",
+    "arxiv_id": "2510.15435v1"
+  },
+  {
+    "title": "SPACE: the SPectroscopic All-sky Cosmic Explorer",
+    "authors": [
+      "A. Cimatti",
+      "M. Robberto",
+      "C. M. Baugh"
+    ],
+    "year": 2008,
+    "abstract": "We describe the scientific motivations, the mission concept and the instrumentation of SPACE, a class-M mission proposed for concept study at the first call of the ESA Cosmic-Vision 2015-2025 planning cycle. SPACE aims to produce the largest three-dimensional evolutionary map of the Universe over the past 10 billion years by taking near-IR spectra and measuring redshifts for more than half a billi",
+    "pdf_url": "https://arxiv.org/pdf/0804.4433v1",
+    "arxiv_id": "0804.4433v1"
+  },
+  {
+    "title": "PCA-Guided Autoencoding for Structured Dimensionality Reduction in Active Infrared Thermography",
+    "authors": [
+      "Mohammed Salah",
+      "Numan Saeed",
+      "Davor Svetinovic"
+    ],
+    "year": 2025,
+    "abstract": "Active Infrared thermography (AIRT) is a widely adopted non-destructive testing (NDT) technique for detecting subsurface anomalies in industrial components. Due to the high dimensionality of AIRT data, current approaches employ non-linear autoencoders (AEs) for dimensionality reduction. However, the latent space learned by AIRT AEs lacks structure, limiting their effectiveness in downstream defect",
+    "pdf_url": "https://arxiv.org/pdf/2508.07773v1",
+    "arxiv_id": "2508.07773v1"
+  },
+  {
+    "title": "Mechanisms of dimensionality reduction and decorrelation in deep neural networks",
+    "authors": [
+      "Haiping Huang"
+    ],
+    "year": 2017,
+    "abstract": "Deep neural networks are widely used in various domains. However, the nature of computations at each layer of the deep networks is far from being well understood. Increasing the interpretability of deep neural networks is thus important. Here, we construct a mean-field framework to understand how compact representations are developed across layers, not only in deterministic deep networks with rand",
+    "pdf_url": "https://arxiv.org/pdf/1710.01467v3",
+    "arxiv_id": "1710.01467v3"
+  },
+  {
+    "title": "Unified Framework for Spectral Dimensionality Reduction, Maximum Variance Unfolding, and Kernel Learning By Semidefinite Programming: Tutorial and Survey",
+    "authors": [
+      "Benyamin Ghojogh",
+      "Ali Ghodsi",
+      "Fakhri Karray"
+    ],
+    "year": 2021,
+    "abstract": "This is a tutorial and survey paper on unification of spectral dimensionality reduction methods, kernel learning by Semidefinite Programming (SDP), Maximum Variance Unfolding (MVU) or Semidefinite Embedding (SDE), and its variants. We first explain how the spectral dimensionality reduction methods can be unified as kernel Principal Component Analysis (PCA) with different kernels. This unification ",
+    "pdf_url": "https://arxiv.org/pdf/2106.15379v2",
+    "arxiv_id": "2106.15379v2"
+  },
+  {
+    "title": "Nondistortionary belief elicitation",
+    "authors": [
+      "Marcin P\u0119ski",
+      "Colin Stewart"
+    ],
+    "year": 2025,
+    "abstract": "A researcher wants to ask a decision-maker about a belief related to a choice the decision-maker made; examples include eliciting confidence or cognitive uncertainty. When can the researcher provide incentives for the decision-maker to report her belief truthfully without distorting her choice? We identify necessary and sufficient conditions for nondistortionary elicitation and fully characterize ",
+    "pdf_url": "https://arxiv.org/pdf/2506.12167v1",
+    "arxiv_id": "2506.12167v1"
+  },
+  {
+    "title": "Basic Ideas and Tools for Projection-Based Model Reduction of Parametric Partial Differential Equations",
+    "authors": [
+      "Gianluigi Rozza",
+      "Martin Hess",
+      "Giovanni Stabile"
+    ],
+    "year": 2019,
+    "abstract": "We provide first the functional analysis background required for reduced order modeling and present the underlying concepts of reduced basis model reduction. The projection-based model reduction framework under affinity assumptions, offline-online decomposition and error estimation is introduced. Several tools for geometry parametrizations, such as free form deformation, radial basis function inte",
+    "pdf_url": "https://arxiv.org/pdf/1911.08954v1",
+    "arxiv_id": "1911.08954v1"
+  },
+  {
+    "title": "Implementing Integrity Constraints in an Existing Belief Revision System",
+    "authors": [
+      "Frances L. Johnson",
+      "Stuart C. Shapiro"
+    ],
+    "year": 2000,
+    "abstract": "SNePS is a mature knowledge representation, reasoning, and acting system that has long contained a belief revision subsystem, called SNeBR. SNeBR is triggered when an explicit contradiction is introduced into the SNePS belief space, either because of a user's new assertion, or because of a user's query. SNeBR then makes the user decide what belief to remove from the belief space in order to restor",
+    "pdf_url": "https://arxiv.org/pdf/cs/0003040v1",
+    "arxiv_id": "0003040v1"
+  },
+  {
+    "title": "Homotopy Type Theory: Univalent Foundations of Mathematics",
+    "authors": [
+      "The Univalent Foundations Program"
+    ],
+    "year": 2013,
+    "abstract": "Homotopy type theory is a new branch of mathematics, based on a recently discovered connection between homotopy theory and type theory, which brings new ideas into the very foundation of mathematics. On the one hand, Voevodsky's subtle and beautiful \"univalence axiom\" implies that isomorphic structures can be identified. On the other hand, \"higher inductive types\" provide direct, logical descripti",
+    "pdf_url": "https://arxiv.org/pdf/1308.0729v1",
+    "arxiv_id": "1308.0729v1"
+  },
+  {
+    "title": "Are Large Language Models Moral Hypocrites? A Study Based on Moral Foundations",
+    "authors": [
+      "Jos\u00e9 Luiz Nunes",
+      "Guilherme F. C. F. Almeida",
+      "Marcelo de Araujo"
+    ],
+    "year": 2024,
+    "abstract": "Large language models (LLMs) have taken centre stage in debates on Artificial Intelligence. Yet there remains a gap in how to assess LLMs' conformity to important human values. In this paper, we investigate whether state-of-the-art LLMs, GPT-4 and Claude 2.1 (Gemini Pro and LLAMA 2 did not generate valid results) are moral hypocrites. We employ two research instruments based on the Moral Foundatio",
+    "pdf_url": "https://arxiv.org/pdf/2405.11100v2",
+    "arxiv_id": "2405.11100v2"
+  },
+  {
+    "title": "Introduction to the book \"Quantum Theory: Informational Foundations and Foils\"",
+    "authors": [
+      "Giulio Chiribella",
+      "Robert W. Spekkens"
+    ],
+    "year": 2018,
+    "abstract": "We present here our introduction to the contributed volume \"Quantum Theory: Informational Foundations and Foils\", Springer Netherlands (2016). It highlights recent trends in quantum foundations and offers an overview of the contributions appearing in the book.",
+    "pdf_url": "https://arxiv.org/pdf/1805.11483v3",
+    "arxiv_id": "1805.11483v3"
+  },
+  {
+    "title": "Controversies in the foundations of analysis: Comments on Schubring's Conflicts",
+    "authors": [
+      "Piotr Blaszczyk",
+      "Vladimir Kanovei",
+      "Mikhail Katz"
+    ],
+    "year": 2016,
+    "abstract": "Foundations of Science recently published a rebuttal to a portion of our essay it published two years ago. The author, G. Schubring, argues that our 2013 text treated unfairly his 2005 book, Conflicts between generalization, rigor, and intuition. He further argues that our attempt to show that Cauchy is part of a long infinitesimalist tradition confuses text with context and thereby misunderstands",
+    "pdf_url": "https://arxiv.org/pdf/1601.00059v2",
+    "arxiv_id": "1601.00059v2"
+  },
+  {
+    "title": "LLMs grasp morality in concept",
+    "authors": [
+      "Mark Pock",
+      "Andre Ye",
+      "Jared Moore"
+    ],
+    "year": 2023,
+    "abstract": "Work in AI ethics and fairness has made much progress in regulating LLMs to reflect certain values, such as fairness, truth, and diversity. However, it has taken the problem of how LLMs might 'mean' anything at all for granted. Without addressing this, it is not clear what imbuing LLMs with such values even means. In response, we provide a general theory of meaning that extends beyond humans. We u",
+    "pdf_url": "https://arxiv.org/pdf/2311.02294v1",
+    "arxiv_id": "2311.02294v1"
+  },
+  {
+    "title": "Variational Approach to Quantum Field Theory: Gaussian Approximation and the Perturbative Expansion around It",
+    "authors": [
+      "Jae Hyung Yee"
+    ],
+    "year": 1997,
+    "abstract": "The functional Schrodinger picture formulation of quantum field theory and the variational Gaussian approximation method based on the formulation are briefly reviewed. After presenting recent attempts to improve the variational approximation, we introduce a new systematic method based on the background field method, which enables one to compute the order-by-order correction terms to the Gaussian a",
+    "pdf_url": "https://arxiv.org/pdf/hep-th/9707234v2",
+    "arxiv_id": "9707234v2"
+  },
+  {
+    "title": "Assessing LLMs for Moral Value Pluralism",
+    "authors": [
+      "Noam Benkler",
+      "Drisana Mosaphir",
+      "Scott Friedman"
+    ],
+    "year": 2023,
+    "abstract": "The fields of AI current lacks methods to quantitatively assess and potentially alter the moral values inherent in the output of large language models (LLMs). However, decades of social science research has developed and refined widely-accepted moral value surveys, such as the World Values Survey (WVS), eliciting value judgments from direct questions in various geographies. We have turned those qu",
+    "pdf_url": "https://arxiv.org/pdf/2312.10075v1",
+    "arxiv_id": "2312.10075v1"
+  },
+  {
+    "title": "Moral Outrage Shapes Commitments Beyond Attention: Multimodal Moral Emotions on YouTube in Korea and the US",
+    "authors": [
+      "Seongchan Park",
+      "Jaehong Kim",
+      "Hyeonseung Kim"
+    ],
+    "year": 2026,
+    "abstract": "Understanding how media rhetoric shapes audience engagement is crucial in the attention economy. This study examines how moral emotional framing by mainstream news channels on YouTube influences user behavior across Korea and the United States. To capture the platform's multimodal nature, combining thumbnail images and video titles, we develop a multimodal moral emotion classifier by fine tuning a",
+    "pdf_url": "https://arxiv.org/pdf/2601.21815v2",
+    "arxiv_id": "2601.21815v2"
+  },
+  {
+    "title": "Survey of mathematical foundations of QFT and perturbative string theory",
+    "authors": [
+      "Hisham Sati",
+      "Urs Schreiber"
+    ],
+    "year": 2011,
+    "abstract": "Recent years have seen noteworthy progress in the mathematical formulation of quantum field theory and perturbative string theory. We give a brief survey of these developments. It serves as an introduction to the more detailed collection \"Mathematical Foundations of Quantum Field Theory and Perturbative String Theory\".",
+    "pdf_url": "https://arxiv.org/pdf/1109.0955v2",
+    "arxiv_id": "1109.0955v2"
+  },
+  {
+    "title": "Learning From Failure: Integrating Negative Examples when Fine-tuning Large Language Models as Agents",
+    "authors": [
+      "Renxi Wang",
+      "Haonan Li",
+      "Xudong Han"
+    ],
+    "year": 2024,
+    "abstract": "Large language models (LLMs) have achieved success in acting as agents, which interact with environments through tools such as search engines. However, LLMs are optimized for language generation instead of tool use during training or alignment, limiting their effectiveness as agents. To resolve this problem, previous work has first collected interaction trajectories between LLMs and environments, ",
+    "pdf_url": "https://arxiv.org/pdf/2402.11651v2",
+    "arxiv_id": "2402.11651v2"
+  },
+  {
+    "title": "Demystifying Instruction Mixing for Fine-tuning Large Language Models",
+    "authors": [
+      "Renxi Wang",
+      "Haonan Li",
+      "Minghao Wu"
+    ],
+    "year": 2023,
+    "abstract": "Instruction tuning significantly enhances the performance of large language models (LLMs) across various tasks. However, the procedure to optimizing the mixing of instruction datasets for LLM fine-tuning is still poorly understood. This study categorizes instructions into three primary types: NLP downstream tasks, coding, and general chat. We explore the effects of instruction tuning on different ",
+    "pdf_url": "https://arxiv.org/pdf/2312.10793v3",
+    "arxiv_id": "2312.10793v3"
+  },
+  {
+    "title": "WizardLM: Empowering large pre-trained language models to follow complex instructions",
+    "authors": [
+      "Can Xu",
+      "Qingfeng Sun",
+      "Kai Zheng"
+    ],
+    "year": 2023,
+    "abstract": "Training large language models (LLMs) with open-domain instruction following data brings colossal success. However, manually creating such instruction data is very time-consuming and labor-intensive. Moreover, humans may struggle to produce high-complexity instructions. In this paper, we show an avenue for creating large amounts of instruction data with varying levels of complexity using LLM inste",
+    "pdf_url": "https://arxiv.org/pdf/2304.12244v3",
+    "arxiv_id": "2304.12244v3"
+  },
+  {
+    "title": "WizardCoder: Empowering Code Large Language Models with Evol-Instruct",
+    "authors": [
+      "Ziyang Luo",
+      "Can Xu",
+      "Pu Zhao"
+    ],
+    "year": 2023,
+    "abstract": "Code Large Language Models (Code LLMs), such as StarCoder, have demonstrated exceptional performance in code-related tasks. However, most existing models are solely pre-trained on extensive raw code data without instruction fine-tuning. In this paper, we introduce WizardCoder, which empowers Code LLMs with complex instruction fine-tuning, by adapting the Evol-Instruct method to the domain of code.",
+    "pdf_url": "https://arxiv.org/pdf/2306.08568v2",
+    "arxiv_id": "2306.08568v2"
+  },
+  {
+    "title": "TEAL: Tokenize and Embed ALL for Multi-modal Large Language Models",
+    "authors": [
+      "Zhen Yang",
+      "Yingxue Zhang",
+      "Fandong Meng"
+    ],
+    "year": 2023,
+    "abstract": "Despite Multi-modal Large Language Models (MM-LLMs) have made exciting strides recently, they are still struggling to efficiently model the interactions among multi-modal inputs and the generation in non-textual modalities. In this work, we propose TEAL (Tokenize and Embed ALl)}, an approach to treat the input from any modality as a token sequence and learn a joint embedding space for all modaliti",
+    "pdf_url": "https://arxiv.org/pdf/2311.04589v3",
+    "arxiv_id": "2311.04589v3"
+  },
+  {
+    "title": "Evolutionary Computation in the Era of Large Language Model: Survey and Roadmap",
+    "authors": [
+      "Xingyu Wu",
+      "Sheng-hao Wu",
+      "Jibin Wu"
+    ],
+    "year": 2024,
+    "abstract": "Large language models (LLMs) have not only revolutionized natural language processing but also extended their prowess to various domains, marking a significant stride towards artificial general intelligence. The interplay between LLMs and evolutionary algorithms (EAs), despite differing in objectives and methodologies, share a common pursuit of applicability in complex problems. Meanwhile, EA can ",
+    "pdf_url": "https://arxiv.org/pdf/2401.10034v3",
+    "arxiv_id": "2401.10034v3"
+  },
+  {
+    "title": "Investigating Retrieval-Augmented Generation in Quranic Studies: A Study of 13 Open-Source Large Language Models",
+    "authors": [
+      "Zahra Khalila",
+      "Arbi Haza Nasution",
+      "Winda Monika"
+    ],
+    "year": 2025,
+    "abstract": "Accurate and contextually faithful responses are critical when applying large language models (LLMs) to sensitive and domain-specific tasks, such as answering queries related to quranic studies. General-purpose LLMs often struggle with hallucinations, where generated responses deviate from authoritative sources, raising concerns about their reliability in religious contexts. This challenge highlig",
+    "pdf_url": "https://arxiv.org/pdf/2503.16581v1",
+    "arxiv_id": "2503.16581v1"
+  },
+  {
+    "title": "PB-LLM: Partially Binarized Large Language Models",
+    "authors": [
+      "Yuzhang Shang",
+      "Zhihang Yuan",
+      "Qiang Wu"
+    ],
+    "year": 2023,
+    "abstract": "This paper explores network binarization, a radical form of quantization, compressing model weights to a single bit, specifically for Large Language Models (LLMs) compression. Due to previous binarization methods collapsing LLMs, we propose a novel approach, Partially-Binarized LLM (PB-LLM), which can achieve extreme low-bit quantization while maintaining the linguistic reasoning capacity of quant",
+    "pdf_url": "https://arxiv.org/pdf/2310.00034v2",
+    "arxiv_id": "2310.00034v2"
+  },
+  {
+    "title": "Trustworthiness of Children Stories Generated by Large Language Models",
+    "authors": [
+      "Prabin Bhandari",
+      "Hannah Marie Brennan"
+    ],
+    "year": 2023,
+    "abstract": "Large Language Models (LLMs) have shown a tremendous capacity for generating literary text. However, their effectiveness in generating children's stories has yet to be thoroughly examined. In this study, we evaluate the trustworthiness of children's stories generated by LLMs using various measures, and we compare and contrast our results with both old and new children's stories to better assess th",
+    "pdf_url": "https://arxiv.org/pdf/2308.00073v1",
+    "arxiv_id": "2308.00073v1"
+  },
+  {
+    "title": "Jais and Jais-chat: Arabic-Centric Foundation and Instruction-Tuned Open Generative Large Language Models",
+    "authors": [
+      "Neha Sengupta",
+      "Sunil Kumar Sahu",
+      "Bokang Jia"
+    ],
+    "year": 2023,
+    "abstract": "We introduce Jais and Jais-chat, new state-of-the-art Arabic-centric foundation and instruction-tuned open generative large language models (LLMs). The models are based on the GPT-3 decoder-only architecture and are pretrained on a mixture of Arabic and English texts, including source code in various programming languages. With 13 billion parameters, they demonstrate better knowledge and reasoning",
+    "pdf_url": "https://arxiv.org/pdf/2308.16149v2",
+    "arxiv_id": "2308.16149v2"
+  },
+  {
+    "title": "When and why are principal component scores a good tool for visualizing high-dimensional data?",
+    "authors": [
+      "Kristoffer Hellton",
+      "Magne Thoresen"
+    ],
+    "year": 2014,
+    "abstract": "Principal component analysis (PCA) is a popular dimension reduction technique often used to visualize high-dimensional data structures. In genomics, this can involve millions of variables, but only tens to hundreds of observations. Theoretically, such extreme high-dimensionality will cause biased or inconsistent eigenvector estimates, but in practice the principal component scores are used for vis",
+    "pdf_url": "https://arxiv.org/pdf/1401.2781v4",
+    "arxiv_id": "1401.2781v4"
+  },
+  {
+    "title": "Is Sora a World Simulator? A Comprehensive Survey on General World Models and Beyond",
+    "authors": [
+      "Zheng Zhu",
+      "Xiaofeng Wang",
+      "Wangbo Zhao"
+    ],
+    "year": 2024,
+    "abstract": "General world models represent a crucial pathway toward achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications ranging from virtual environments to decision-making systems. Recently, the emergence of the Sora model has attained significant attention due to its remarkable simulation capabilities, which exhibits an incipient comprehension of physical law",
+    "pdf_url": "https://arxiv.org/pdf/2405.03520v2",
+    "arxiv_id": "2405.03520v2"
+  },
+  {
+    "title": "CMB Constraints on Principal Components of the Inflaton Potential",
+    "authors": [
+      "Cora Dvorkin",
+      "Wayne Hu"
+    ],
+    "year": 2010,
+    "abstract": "We place functional constraints on the shape of the inflaton potential from the cosmic microwave background through a variant of the generalized slow roll approximation that allows large amplitude, rapidly changing deviations from scale-free conditions. Employing a principal component decomposition of the source function G'~3(V'/V)^2 - 2V''/V and keeping only those measured to better than 10% resu",
+    "pdf_url": "https://arxiv.org/pdf/1007.0215v1",
+    "arxiv_id": "1007.0215v1"
+  },
+  {
+    "title": "A randomized algorithm for principal component analysis",
+    "authors": [
+      "Vladimir Rokhlin",
+      "Arthur Szlam",
+      "Mark Tygert"
+    ],
+    "year": 2008,
+    "abstract": "Principal component analysis (PCA) requires the computation of a low-rank approximation to a matrix containing the data being analyzed. In many applications of PCA, the best possible accuracy of any rank-deficient approximation is at most a few digits (measured in the spectral norm, relative to the spectral norm of the matrix being approximated). In such circumstances, efficient algorithms have no",
+    "pdf_url": "https://arxiv.org/pdf/0809.2274v4",
+    "arxiv_id": "0809.2274v4"
+  },
+  {
+    "title": "The Gaia-ESO Survey: calibration strategy",
+    "authors": [
+      "E. Pancino",
+      "the Gaia-ESO Survey collaboration"
+    ],
+    "year": 2016,
+    "abstract": "The Gaia-ESO survey (GES) is now in its fifth and last year of observations, and has already produced tens of thousands of high-quality spectra of stars in all Milky Way components. This paper presents the strategy behind the selection of astrophysical calibration targets, ensuring that all GES results on radial velocities, atmospheric parameters, and chemical abundance ratios will be both interna",
+    "pdf_url": "https://arxiv.org/pdf/1610.06480v1",
+    "arxiv_id": "1610.06480v1"
+  },
+  {
+    "title": "The SAMI Galaxy Survey: first 1000 galaxies",
+    "authors": [
+      "J. T. Allen",
+      "the SAMI Galaxy Survey Team"
+    ],
+    "year": 2014,
+    "abstract": "The Sydney-AAO Multi-object Integral field spectrograph (SAMI) Galaxy Survey is an ongoing project to obtain integral field spectroscopic observations of ~3400 galaxies by mid-2016. Including the pilot survey, a total of ~1000 galaxies have been observed to date, making the SAMI Galaxy Survey the largest of its kind in existence. This unique dataset allows a wide range of investigations into diffe",
+    "pdf_url": "https://arxiv.org/pdf/1409.4147v1",
+    "arxiv_id": "1409.4147v1"
+  },
+  {
+    "title": "Quantum principal component analysis only achieves an exponential speedup because of its state preparation assumptions",
+    "authors": [
+      "Ewin Tang"
+    ],
+    "year": 2018,
+    "abstract": "A central roadblock to analyzing quantum algorithms on quantum states is the lack of a comparable input model for classical algorithms. Inspired by recent work of the author [E. Tang, STOC'19], we introduce such a model, where we assume we can efficiently perform $\\ell^2$-norm samples of input data, a natural analogue to quantum algorithms that assume efficient state preparation of classical data.",
+    "pdf_url": "https://arxiv.org/pdf/1811.00414v3",
+    "arxiv_id": "1811.00414v3"
+  }
+]

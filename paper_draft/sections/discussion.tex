@@ -1,0 +1,38 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Interpretation of Results}
+
+\para{Belief space is surprisingly compressible.}
+Our central finding is that belief space, despite spanning thousands of topically diverse statements, has a dramatically lower intrinsic dimensionality than its surface diversity suggests. The 40\% reduction in components relative to random baselines (93 vs.\ 154 at 90\% variance) indicates strong and systematic covariance among beliefs. This is not merely a semantic effect: the attitudinal dimensionality (93 components) is 4$\times$ lower than the semantic dimensionality (380 components), confirming that beliefs covary for reasons beyond topical similarity.
+
+\para{Ideology as the gravitational field of belief space.}
+The dominance of PC1 (28.6\% of variance) is striking. In a space of 300 beliefs spanning 50 diverse topics, a single progressive--conservative axis explains nearly a third of all variation in how personas respond. This aligns with a long tradition in political science identifying left--right ideology as the primary organizing dimension of mass opinion \cite{converse1964nature}, but quantifies its explanatory power in a far more comprehensive belief space than typically studied.
+
+\para{Three levels of belief structure.}
+Our three PCA methods reveal a hierarchy of structure. Semantic embedding PCA captures topical diversity (380 components for 90\%). Persona response PCA captures attitudinal covariance (93 components)---the regularities in who holds which beliefs together. Conditional influence PCA captures causal-like structure (25 components)---how holding one belief actively constrains others. The progressive compression from 380 to 93 to 25 shows that the {\em predictive} structure of beliefs is far simpler than the {\em descriptive} structure.
+
+\subsection{Implications}
+
+\para{Survey design.}
+Our results suggest that most of the \nbeliefs beliefs in our corpus are redundant from an attitudinal measurement perspective. Approximately 100 strategically chosen beliefs could reconstruct the full attitudinal landscape, and as few as 25 diagnostic questions---selected for high conditional influence---could capture 90\% of an individual's belief profile. This has practical implications for political polling, market research, and social science surveys.
+
+\para{AI alignment.}
+LLMs encode a structured, low-dimensional model of human values that can be systematically probed and analyzed. The five interpretable principal components we identify (ideology, trust, individualism, spirituality, gender attitudes) provide a concrete framework for understanding and auditing the value representations in language models.
+
+\para{Political science.}
+Our five-component model extends the World Values Survey's two-axis framework \cite{inglehart2005modernization} by adding dimensions of institutional trust, individualism, and gender attitudes. The finding that conditional influence structure is even lower-dimensional than correlational structure suggests that opinion dynamics may be driven by a small number of ``gateway beliefs'' whose adoption cascades through the belief network.
+
+\subsection{Limitations}
+
+\para{LLM as proxy for humans.}
+We used \gptmini to simulate persona responses rather than collecting human survey data. While Ma and Powell~\cite{ma2025llm} validated that LLM attitude correlations match human data at $r = 0.77$, the LLM may over-regularize belief structure---producing cleaner covariance than would be observed in human populations. Our dimensionality estimates should therefore be treated as a lower bound on the true complexity of human belief systems.
+
+\para{Persona diversity.}
+Despite combinatorial generation from demographic attributes, LLM-simulated personas may not capture the full range of human belief combinations. Demographic attributes interact in complex, culturally contingent ways that simple combinatorial sampling may miss. In particular, the right-skewed rating distribution (mean 3.97) suggests that personas may not adequately represent contrarian or heterodox positions.
+
+\para{Scale limitations.}
+The persona response PCA used \nbeliefsub of \nbeliefs beliefs. While our $k$-means selection ensures topical diversity, the full covariance structure of the entire corpus remains uncharacterized. Matrix completion or active sampling methods could help scale to the full set.
+
+\para{Single model.}
+All experiments used \gptmini. Testing with other LLMs (Claude, Gemini, open-source models) would reveal whether the observed dimensionality reflects stable aspects of human belief structure or is an artifact of a particular model's training data and inductive biases.

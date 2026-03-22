@@ -1,0 +1,55 @@
+{
+  "n_anchors": 50,
+  "n_test_beliefs": 100,
+  "mean_abs_diff": 1.035,
+  "conditional_pca_variance": {
+    "50%": 5,
+    "80%": 16,
+    "90%": 25,
+    "95%": 32
+  },
+  "top_impact_anchors": [
+    {
+      "belief": "I believe that economic success is the only legitimate measure of merit and fairness in society.",
+      "impact": 2.07
+    },
+    {
+      "belief": "I believe that animal testing for cosmetic products is unethical and should be banned globally.",
+      "impact": 1.48
+    },
+    {
+      "belief": "I believe that countries should enforce absolute border closures to preserve their cultural identity.",
+      "impact": 1.47
+    },
+    {
+      "belief": "I believe that charitable giving, not government programs, is the appropriate means to address inequality stemming from material disparities.",
+      "impact": 1.43
+    },
+    {
+      "belief": "I believe that criminals must first be held accountable through punishment before any rehabilitation efforts begin.",
+      "impact": 1.34
+    }
+  ],
+  "top_sensitive_beliefs": [
+    {
+      "belief": "I believe that any attempt to ban certain types of ammunition or accessories, like high-capacity magazines, is unconstitutional.",
+      "sensitivity": 2.9608106997915287
+    },
+    {
+      "belief": "I believe that the state\u2019s primary role should be limited to protecting citizens from force and fraud.",
+      "sensitivity": 2.8017851452243807
+    },
+    {
+      "belief": "I believe that global interconnectedness demands that we subordinate local self-interest to broader humanitarian considerations.",
+      "sensitivity": 2.7367864366808012
+    },
+    {
+      "belief": "I believe that wealth inequality reflects differences in individual effort and talent rather than structural issues.",
+      "sensitivity": 2.7221315177632395
+    },
+    {
+      "belief": "I believe that rehabilitation, rather than deterrence, should be the central focus of sentencing within criminal justice.",
+      "sensitivity": 2.5771301868551384
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+\section{Introduction}
+\label{sec:intro}
+
+How many independent opinions does a person actually hold? On the surface, humans express views on thousands of topics---gun control, climate policy, religious practice, parenting philosophy---yet everyday experience suggests that knowing someone's stance on a few issues often lets us predict many others. We set out to quantify this intuition by asking: {\bf how many latent dimensions are needed to explain 90\% of the variance in a space of $\sim$10,000 diverse beliefs?}
+
+This question sits at the intersection of political science, cognitive science, and AI alignment. Political scientists have long debated whether public opinion is essentially one-dimensional \cite{converse1964nature} or multidimensional \cite{inglehart2005modernization}. The World Values Survey identifies two major axes---traditional--secular and survival--self-expression---but these were derived from $\sim$250 items across specific cultural domains. Meanwhile, the rapid adoption of large language models (LLMs) as proxies for human judgment \cite{santurkar2023whose, argyle2023out} raises a parallel question: what latent value structure do LLMs encode, and how does it compare to human belief systems?
+
+Recent work has begun to probe this structure. Ma and Powell~\cite{ma2025llm} demonstrated that LLMs can predict pairwise attitude correlations with $r = 0.77$ fidelity to human data, even for semantically dissimilar beliefs. Suh \etal~\cite{suh2025language} showed that fine-tuned LLMs learn ``belief embeddings'' that cluster meaningfully. However, no prior study has explicitly computed PCA on a large-scale belief covariance matrix to determine the intrinsic dimensionality of belief space, nor has any study scaled beyond $\sim$1,500 belief items.
+
+We address this gap with a systematic study spanning \nbeliefs belief statements---the largest set analyzed for covariance structure to date. Our approach uses LLMs both to generate diverse beliefs and to simulate how different personas respond to them, exploiting the validated correspondence between LLM-simulated and human attitude correlations \cite{ma2025llm}. We apply PCA in three complementary spaces: (1)~semantic embedding space, measuring topical structure; (2)~persona response space, measuring attitudinal covariance; and (3)~conditional influence space, measuring how holding one belief predicts others.
+
+Our key finding is that belief space is dramatically lower-dimensional than its surface diversity suggests. Only 9 principal components capture 50\% of response variance---compared to 55 for random data---and 93 components capture 90\% (vs.\ 154 for random). The dominant first component alone explains 28.6\% of variance and maps cleanly to a progressive--conservative axis. The conditional influence structure is even sparser: just 25 dimensions explain 90\% of belief-to-belief predictability.
+
+Our contributions are as follows:
+\begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+    \item We construct a dataset of \nbeliefs diverse belief statements and analyze their covariance structure at a scale an order of magnitude larger than prior work.
+    \item We introduce a three-method PCA framework---semantic, response, and conditional---that disentangles topical diversity from attitudinal covariance and causal influence.
+    \item We show that belief space requires 40\% fewer dimensions than random baselines and identify five interpretable principal components (ideology, institutional trust, individualism, spirituality, gender attitudes).
+    \item We demonstrate that the conditional influence structure of beliefs is even lower-dimensional than their correlational structure, implying that $\sim$25 diagnostic questions suffice to reconstruct 90\% of a belief profile.
+\end{itemize}

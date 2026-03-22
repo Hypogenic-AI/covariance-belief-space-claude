@@ -1,0 +1,15 @@
+Human beliefs do not exist in isolation---they form structured, correlated systems.
+Understanding the intrinsic dimensionality of this ``belief space'' has implications for
+political science, survey design, and AI alignment, yet no prior work has systematically
+measured it at scale. We generate \nbeliefs diverse belief statements and analyze their
+covariance structure using three complementary methods: semantic embedding PCA over all
+beliefs, persona response PCA (\npersonas synthetic personas rating \nbeliefsub beliefs),
+and conditional belief influence PCA (\nanchors anchor beliefs $\times$ \ntestbeliefs test
+beliefs). We find that belief space is dramatically lower-dimensional than random baselines:
+only 9 principal components explain 50\% of response variance and 93 explain 90\%, compared
+to 154 for random data. The dominant first component (28.6\% of variance) maps cleanly to a
+progressive--conservative ideological axis. The conditional influence experiment reveals that
+just 25 dimensions explain 90\% of how holding one belief predicts agreement with others.
+These results suggest that the apparent diversity of human opinions can be largely captured
+by a small number of latent ideological dimensions, and that approximately 25 well-chosen
+diagnostic questions could reconstruct 90\% of an individual's belief profile.

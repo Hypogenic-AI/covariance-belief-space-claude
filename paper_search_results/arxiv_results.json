@@ -1,0 +1,705 @@
+[
+  {
+    "title": "SPACE: the SPectroscopic All-sky Cosmic Explorer",
+    "authors": [
+      "A. Cimatti",
+      "M. Robberto",
+      "C. M. Baugh"
+    ],
+    "year": 2008,
+    "abstract": "We describe the scientific motivations, the mission concept and the instrumentation of SPACE, a class-M mission proposed for concept study at the first call of the ESA Cosmic-Vision 2015-2025 planning cycle. SPACE aims to produce the largest three-dimensional evolutionary map of the Universe over th",
+    "pdf_url": "https://arxiv.org/pdf/0804.4433v1",
+    "arxiv_id": "0804.4433v1"
+  },
+  {
+    "title": "Nondistortionary belief elicitation",
+    "authors": [
+      "Marcin P\u0119ski",
+      "Colin Stewart"
+    ],
+    "year": 2025,
+    "abstract": "A researcher wants to ask a decision-maker about a belief related to a choice the decision-maker made; examples include eliciting confidence or cognitive uncertainty. When can the researcher provide incentives for the decision-maker to report her belief truthfully without distorting her choice? We i",
+    "pdf_url": "https://arxiv.org/pdf/2506.12167v1",
+    "arxiv_id": "2506.12167v1"
+  },
+  {
+    "title": "Implementing Integrity Constraints in an Existing Belief Revision System",
+    "authors": [
+      "Frances L. Johnson",
+      "Stuart C. Shapiro"
+    ],
+    "year": 2000,
+    "abstract": "SNePS is a mature knowledge representation, reasoning, and acting system that has long contained a belief revision subsystem, called SNeBR. SNeBR is triggered when an explicit contradiction is introduced into the SNePS belief space, either because of a user's new assertion, or because of a user's qu",
+    "pdf_url": "https://arxiv.org/pdf/cs/0003040v1",
+    "arxiv_id": "0003040v1"
+  },
+  {
+    "title": "Whistler instability stimulated by the suprathermal electrons present in space plasmas",
+    "authors": [
+      "M. Lazar",
+      "R. A. Lopez",
+      "S. M. Shaaban"
+    ],
+    "year": 2019,
+    "abstract": "In the absence of efficient collisions, deviations from thermal equilibrium of plasma particle distributions are controlled by the self-generated instabilities. The whistler instability is a notorious example, usually responsible for the regulation of electron temperature anisotropy $A = T_{\\perp}/T",
+    "pdf_url": "https://arxiv.org/pdf/1910.01506v1",
+    "arxiv_id": "1910.01506v1"
+  },
+  {
+    "title": "Verification of Space Weather Forecasts issued by the Met Office Space Weather Operations Centre",
+    "authors": [
+      "Michael A. Sharpe",
+      "Sophie A. Murray"
+    ],
+    "year": 2018,
+    "abstract": "The Met Office Space Weather Operations Centre was founded in 2014 and part of its remit is a daily Space Weather Technical Forecast to help the UK build resilience to space weather impacts; guidance includes four day geo-magnetic storm forecasts (GMSF) and X-ray flare forecasts (XRFF). It is crucia",
+    "pdf_url": "https://arxiv.org/pdf/1804.02985v1",
+    "arxiv_id": "1804.02985v1"
+  },
+  {
+    "title": "Belief Space Planning: A Covariance Steering Approach",
+    "authors": [
+      "Dongliang Zheng",
+      "Jack Ridderhof",
+      "Panagiotis Tsiotras"
+    ],
+    "year": 2021,
+    "abstract": "A new belief space planning algorithm, called covariance steering Belief RoadMap (CS-BRM), is introduced, which is a multi-query algorithm for motion planning of dynamical systems under simultaneous motion and observation uncertainties. CS-BRM extends the probabilistic roadmap (PRM) approach to beli",
+    "pdf_url": "https://arxiv.org/pdf/2105.11092v1",
+    "arxiv_id": "2105.11092v1"
+  },
+  {
+    "title": "The importance of ensemble techniques for operational space weather forecasting",
+    "authors": [
+      "Sophie A. Murray"
+    ],
+    "year": 2018,
+    "abstract": "The space weather community has begun to use frontier methods such as data assimilation, machine learning, and ensemble modeling to advance current operational forecasting efforts. This was highlighted by a multi-disciplinary session at the 2017 American Geophysical Union Meeting, 'Frontier Solar-Te",
+    "pdf_url": "https://arxiv.org/pdf/1806.09861v1",
+    "arxiv_id": "1806.09861v1"
+  },
+  {
+    "title": "Belief in the Machine: Investigating Epistemological Blind Spots of Language Models",
+    "authors": [
+      "Mirac Suzgun",
+      "Tayfun Gur",
+      "Federico Bianchi"
+    ],
+    "year": 2024,
+    "abstract": "As language models (LMs) become integral to fields like healthcare, law, and journalism, their ability to differentiate between fact, belief, and knowledge is essential for reliable decision-making. Failure to grasp these distinctions can lead to significant consequences in areas such as medical dia",
+    "pdf_url": "https://arxiv.org/pdf/2410.21195v1",
+    "arxiv_id": "2410.21195v1"
+  },
+  {
+    "title": "Space Weather Observations, Modeling, and Alerts in Support of Human Exploration of Mars",
+    "authors": [
+      "James L. Green",
+      "Chuanfei Dong",
+      "Michael Hesse"
+    ],
+    "year": 2022,
+    "abstract": "Space weather observations and modeling at Mars have begun but they must be significantly increased to support the future of Human Exploration on the Red Planet. A comprehensive space weather understanding of a planet without a global magnetosphere and a thin atmosphere is very different from our si",
+    "pdf_url": "https://arxiv.org/pdf/2211.04021v1",
+    "arxiv_id": "2211.04021v1"
+  },
+  {
+    "title": "An Overview of the SPACE Mission Proposal",
+    "authors": [
+      "M. Robberto",
+      "A. Cimatti",
+      "the SPACE Science Team"
+    ],
+    "year": 2007,
+    "abstract": "SPACE (SPectroscopic All-sky Cosmic Explorer) is a class-M mission proposed to ESA for the Cosmic Vision 2015-2025 call and recently promoted to the next assessment study phase. SPACE will produce the first all-sky spectroscopic survey of the Universe, taking spectra of more than 500 million galaxie",
+    "pdf_url": "https://arxiv.org/pdf/0710.3970v1",
+    "arxiv_id": "0710.3970v1"
+  },
+  {
+    "title": "When and why are principal component scores a good tool for visualizing high-dimensional data?",
+    "authors": [
+      "Kristoffer Hellton",
+      "Magne Thoresen"
+    ],
+    "year": 2014,
+    "abstract": "Principal component analysis (PCA) is a popular dimension reduction technique often used to visualize high-dimensional data structures. In genomics, this can involve millions of variables, but only tens to hundreds of observations. Theoretically, such extreme high-dimensionality will cause biased or",
+    "pdf_url": "https://arxiv.org/pdf/1401.2781v4",
+    "arxiv_id": "1401.2781v4"
+  },
+  {
+    "title": "A randomized algorithm for principal component analysis",
+    "authors": [
+      "Vladimir Rokhlin",
+      "Arthur Szlam",
+      "Mark Tygert"
+    ],
+    "year": 2008,
+    "abstract": "Principal component analysis (PCA) requires the computation of a low-rank approximation to a matrix containing the data being analyzed. In many applications of PCA, the best possible accuracy of any rank-deficient approximation is at most a few digits (measured in the spectral norm, relative to the ",
+    "pdf_url": "https://arxiv.org/pdf/0809.2274v4",
+    "arxiv_id": "0809.2274v4"
+  },
+  {
+    "title": "Principal Component Analysis Using Structural Similarity Index for Images",
+    "authors": [
+      "Benyamin Ghojogh",
+      "Fakhri Karray",
+      "Mark Crowley"
+    ],
+    "year": 2019,
+    "abstract": "Despite the advances of deep learning in specific tasks using images, the principled assessment of image fidelity and similarity is still a critical ability to develop. As it has been shown that Mean Squared Error (MSE) is insufficient for this task, other measures have been developed with one of th",
+    "pdf_url": "https://arxiv.org/pdf/1908.09287v1",
+    "arxiv_id": "1908.09287v1"
+  },
+  {
+    "title": "PCA-Guided Autoencoding for Structured Dimensionality Reduction in Active Infrared Thermography",
+    "authors": [
+      "Mohammed Salah",
+      "Numan Saeed",
+      "Davor Svetinovic"
+    ],
+    "year": 2025,
+    "abstract": "Active Infrared thermography (AIRT) is a widely adopted non-destructive testing (NDT) technique for detecting subsurface anomalies in industrial components. Due to the high dimensionality of AIRT data, current approaches employ non-linear autoencoders (AEs) for dimensionality reduction. However, the",
+    "pdf_url": "https://arxiv.org/pdf/2508.07773v1",
+    "arxiv_id": "2508.07773v1"
+  },
+  {
+    "title": "PCA and K-Means decipher genome",
+    "authors": [
+      "A. N. Gorban",
+      "A. Y. Zinovyev"
+    ],
+    "year": 2005,
+    "abstract": "In this paper, we aim to give a tutorial for undergraduate students studying statistical methods and/or bioinformatics. The students will learn how data visualization can help in genomic sequence analysis. Students start with a fragment of genetic text of a bacterial genome and analyze its structure",
+    "pdf_url": "https://arxiv.org/pdf/q-bio/0504013v2",
+    "arxiv_id": "0504013v2"
+  },
+  {
+    "title": "Validating argument-based opinion dynamics with survey experiments",
+    "authors": [
+      "Sven Banisch",
+      "Hawal Shamon"
+    ],
+    "year": 2022,
+    "abstract": "The empirical validation of models remains one of the most important challenges in opinion dynamics. In this contribution, we report on recent developments on combining data from survey experiments with computational models of opinion formation. We extend previous work on the empirical assessment of",
+    "pdf_url": "https://arxiv.org/pdf/2212.10143v2",
+    "arxiv_id": "2212.10143v2"
+  },
+  {
+    "title": "Quantum principal component analysis only achieves an exponential speedup because of its state preparation assumptions",
+    "authors": [
+      "Ewin Tang"
+    ],
+    "year": 2018,
+    "abstract": "A central roadblock to analyzing quantum algorithms on quantum states is the lack of a comparable input model for classical algorithms. Inspired by recent work of the author [E. Tang, STOC'19], we introduce such a model, where we assume we can efficiently perform $\\ell^2$-norm samples of input data,",
+    "pdf_url": "https://arxiv.org/pdf/1811.00414v3",
+    "arxiv_id": "1811.00414v3"
+  },
+  {
+    "title": "Auto-associative models, nonlinear Principal component analysis, manifolds and projection pursuit",
+    "authors": [
+      "St\u00e9phane Girard",
+      "Serge Iovleff"
+    ],
+    "year": 2011,
+    "abstract": "In this paper, auto-associative models are proposed as candidates to the generalization of Principal Component Analysis. We show that these models are dedicated to the approximation of the dataset by a manifold. Here, the word \"manifold\" refers to the topology properties of the structure. The approx",
+    "pdf_url": "https://arxiv.org/pdf/1103.6119v1",
+    "arxiv_id": "1103.6119v1"
+  },
+  {
+    "title": "TL-PCA: Transfer Learning of Principal Component Analysis",
+    "authors": [
+      "Sharon Hendy",
+      "Yehuda Dar"
+    ],
+    "year": 2024,
+    "abstract": "Principal component analysis (PCA) can be significantly limited when there is too few examples of the target data of interest. We propose a transfer learning approach to PCA (TL-PCA) where knowledge from a related source task is used in addition to the scarce data of a target task. Our TL-PCA has tw",
+    "pdf_url": "https://arxiv.org/pdf/2410.10805v1",
+    "arxiv_id": "2410.10805v1"
+  },
+  {
+    "title": "FAST-PCA: A Fast and Exact Algorithm for Distributed Principal Component Analysis",
+    "authors": [
+      "Arpita Gang",
+      "Waheed U. Bajwa"
+    ],
+    "year": 2021,
+    "abstract": "Principal Component Analysis (PCA) is a fundamental data preprocessing tool in the world of machine learning. While PCA is often thought of as a dimensionality reduction method, the purpose of PCA is actually two-fold: dimension reduction and uncorrelated feature learning. Furthermore, the enormity ",
+    "pdf_url": "https://arxiv.org/pdf/2108.12373v2",
+    "arxiv_id": "2108.12373v2"
+  },
+  {
+    "title": "Constraints for non-zero secondary loadings in confirmatory factor analysis",
+    "authors": [
+      "Andre Beauducel"
+    ],
+    "year": 2015,
+    "abstract": "In the context of confirmatory factor analysis, the independent clusters model has been found to be overly restrictive in several research contexts. Therefore, a less restrictive criterion for parsimony of non-salient loadings in confirmatory factor analysis was proposed. The criterion is based on '",
+    "pdf_url": "https://arxiv.org/pdf/1503.03405v2",
+    "arxiv_id": "1503.03405v2"
+  },
+  {
+    "title": "Learning Belief Network Structure From Data under Causal Insufficiency",
+    "authors": [
+      "Mieczys\u0142aw K\u0142opotek"
+    ],
+    "year": 2017,
+    "abstract": "Though a belief network (a representation of the joint probability distribution, see [3]) and a causal network (a representation of causal relationships [14]) are intended to mean different things, they are closely related. Both assume an underlying dag (directed acyclic graph) structure of relation",
+    "pdf_url": "https://arxiv.org/pdf/1705.10308v1",
+    "arxiv_id": "1705.10308v1"
+  },
+  {
+    "title": "Covid-19 classification with deep neural network and belief functions",
+    "authors": [
+      "Ling Huang",
+      "Su Ruan",
+      "Thierry Denoeux"
+    ],
+    "year": 2021,
+    "abstract": "Computed tomography (CT) image provides useful information for radiologists to diagnose Covid-19. However, visual analysis of CT scans is time-consuming. Thus, it is necessary to develop algorithms for automatic Covid-19 detection from CT images. In this paper, we propose a belief function-based con",
+    "pdf_url": "https://arxiv.org/pdf/2101.06958v1",
+    "arxiv_id": "2101.06958v1"
+  },
+  {
+    "title": "Towards semi-classical analysis for sub-elliptic operators",
+    "authors": [
+      "Veronique Fischer"
+    ],
+    "year": 2021,
+    "abstract": "We discuss the recent developments of semi-classical and micro-local analysis in the context of nilpotent Lie groups and for sub-elliptic operators. In particular, we give an overview of pseudo-differential calculi recently defined on nilpotent Lie groups as well as of the notion of quantum limits i",
+    "pdf_url": "https://arxiv.org/pdf/2111.09854v1",
+    "arxiv_id": "2111.09854v1"
+  },
+  {
+    "title": "D0 Regional Analysis Center Concepts",
+    "authors": [
+      "L. Lueking",
+      "representing the D0 Remote Analysis Task Force"
+    ],
+    "year": 2003,
+    "abstract": "The D0 experiment is facing many exciting challenges providing a computing environment for its worldwide collaboration. Transparent access to data for processing and analysis has been enabled through deployment of its SAM system to collaborating sites and additional functionality will be provided so",
+    "pdf_url": "https://arxiv.org/pdf/cs/0306115v1",
+    "arxiv_id": "0306115v1"
+  },
+  {
+    "title": "A note on the intuitionistic logic of false belief",
+    "authors": [
+      "Tomasz Witczak"
+    ],
+    "year": 2020,
+    "abstract": "In this paper we analyse logic of false belief in intuitionistic setting. This logic, studied in its classical version by Steinsvold, Fan, Gilbert and Venturi, describes the following situation: a formula F is not satisfied in a given world, but we still believe in it (or we think that it should be ",
+    "pdf_url": "https://arxiv.org/pdf/2012.08309v1",
+    "arxiv_id": "2012.08309v1"
+  },
+  {
+    "title": "A trustless society? A political look at the blockchain vision",
+    "authors": [
+      "Rainer Rehak"
+    ],
+    "year": 2024,
+    "abstract": "A lot of business and research effort currently deals with the so called decentralised ledger technology blockchain. Putting it to use carries the tempting promise to make the intermediaries of social interactions superfluous and furthermore keep secure track of all interactions. Currently intermedi",
+    "pdf_url": "https://arxiv.org/pdf/2405.06097v1",
+    "arxiv_id": "2405.06097v1"
+  },
+  {
+    "title": "Measuring Political Preferences in AI Systems: An Integrative Approach",
+    "authors": [
+      "David Rozado"
+    ],
+    "year": 2025,
+    "abstract": "Political biases in Large Language Model (LLM)-based artificial intelligence (AI) systems, such as OpenAI's ChatGPT or Google's Gemini, have been previously reported. While several prior studies have attempted to quantify these biases using political orientation tests, such approaches are limited by",
+    "pdf_url": "https://arxiv.org/pdf/2503.10649v1",
+    "arxiv_id": "2503.10649v1"
+  },
+  {
+    "title": "Data visualization in political and social sciences",
+    "authors": [
+      "Andrei Zinovyev"
+    ],
+    "year": 2010,
+    "abstract": "The basic objective of data visualization is to provide an efficient graphical display for summarizing and reasoning about quantitative information. During the last decades, political science has accumulated a large corpus of various kinds of data such as comprehensive factbooks and atlases, charact",
+    "pdf_url": "https://arxiv.org/pdf/1008.1188v1",
+    "arxiv_id": "1008.1188v1"
+  },
+  {
+    "title": "Dimensions: A Competitor to Scopus and the Web of Science?",
+    "authors": [
+      "Mike Thelwall"
+    ],
+    "year": 2018,
+    "abstract": "Dimensions is a partly free scholarly database launched by Digital Science in January 2018. Dimensions includes journal articles and citation counts, making it a potential new source of impact data. This article explores the value of Dimensions from an impact assessment perspective with an examinati",
+    "pdf_url": "https://arxiv.org/pdf/1803.07525v1",
+    "arxiv_id": "1803.07525v1"
+  },
+  {
+    "title": "A Sparse PCA Approach to Clustering",
+    "authors": [
+      "T. Tony Cai",
+      "Linjun Zhang"
+    ],
+    "year": 2016,
+    "abstract": "We discuss a clustering method for Gaussian mixture model based on the sparse principal component analysis (SPCA) method and compare it with the IF-PCA method. We also discuss the dependent case where the covariance matrix $\u03a3$ is not necessarily diagonal.",
+    "pdf_url": "https://arxiv.org/pdf/1602.05236v1",
+    "arxiv_id": "1602.05236v1"
+  },
+  {
+    "title": "Latent-X: An Atom-level Frontier Model for De Novo Protein Binder Design",
+    "authors": [
+      "Latent Labs Team",
+      "Alex Bridgland",
+      "Jonathan Crabb\u00e9"
+    ],
+    "year": 2025,
+    "abstract": "Traditional drug discovery relies on rounds of screening millions of candidate molecules with low success rates, making drug discovery time and resource intensive. To overcome this screening bottleneck, we introduce Latent-X, an all-atom protein design model that enables a new paradigm of precision ",
+    "pdf_url": "https://arxiv.org/pdf/2507.19375v1",
+    "arxiv_id": "2507.19375v1"
+  },
+  {
+    "title": "Drug-like antibodies with low immunogenicity in human panels designed with Latent-X2",
+    "authors": [
+      "Latent Labs Team",
+      "Henry Kenlay",
+      "Daniella Pretorius"
+    ],
+    "year": 2025,
+    "abstract": "Drug discovery has long sought computational systems capable of designing drug-like molecules directly: developable and non-immunogenic from the start. Here we introduce Latent-X2, a frontier generative model that achieves this goal through zero-shot design of antibodies with strong binding affiniti",
+    "pdf_url": "https://arxiv.org/pdf/2512.20263v1",
+    "arxiv_id": "2512.20263v1"
+  },
+  {
+    "title": "Constrained Geometric Attitude Control on SO(3)",
+    "authors": [
+      "Shankar Kulumani",
+      "Taeyoung Lee"
+    ],
+    "year": 2017,
+    "abstract": "This paper presents a new geometric adaptive control system with state inequality constraints for the attitude dynamics of a rigid body. The control system is designed such that the desired attitude is asymptotically stabilized, while the controlled attitude trajectory avoids undesired regions defin",
+    "pdf_url": "https://arxiv.org/pdf/1711.09292v1",
+    "arxiv_id": "1711.09292v1"
+  },
+  {
+    "title": "Family of Controllers for Attitude Synchronization on the Sphere",
+    "authors": [
+      "Pedro O. Pereira",
+      "Dimos V. Dimarogonas"
+    ],
+    "year": 2015,
+    "abstract": "In this paper we study a family of controllers that guarantees attitude synchronization for a network of elements in the unit sphere domain, i.e. $\\mathcal{S}^2$. We propose distributed continuous controllers for elements whose dynamics are controllable (i.e. control with torque as command), and whi",
+    "pdf_url": "https://arxiv.org/pdf/1503.06326v5",
+    "arxiv_id": "1503.06326v5"
+  },
+  {
+    "title": "Dynamics Within Latent Chain-of-Thought: An Empirical Study of Causal Structure",
+    "authors": [
+      "Zirui Li",
+      "Xuefeng Bai",
+      "Kehai Chen"
+    ],
+    "year": 2026,
+    "abstract": "Latent or continuous chain-of-thought methods replace explicit textual rationales with a number of internal latent steps, but these intermediate computations are difficult to evaluate beyond correlation-based probes. In this paper, we view latent chain-of-thought as a manipulable causal process in r",
+    "pdf_url": "https://arxiv.org/pdf/2602.08783v2",
+    "arxiv_id": "2602.08783v2"
+  },
+  {
+    "title": "Latent-Shift: Latent Diffusion with Temporal Shift for Efficient Text-to-Video Generation",
+    "authors": [
+      "Jie An",
+      "Songyang Zhang",
+      "Harry Yang"
+    ],
+    "year": 2023,
+    "abstract": "We propose Latent-Shift -- an efficient text-to-video generation method based on a pretrained text-to-image generation model that consists of an autoencoder and a U-Net diffusion model. Learning a video diffusion model in the latent space is much more efficient than in the pixel space. The latter is",
+    "pdf_url": "https://arxiv.org/pdf/2304.08477v2",
+    "arxiv_id": "2304.08477v2"
+  },
+  {
+    "title": "Latent Space Imaging",
+    "authors": [
+      "Matheus Souza",
+      "Yidan Zheng",
+      "Kaizhang Kang"
+    ],
+    "year": 2024,
+    "abstract": "Digital imaging systems have traditionally relied on brute-force measurement and processing of pixels arranged on regular grids. In contrast, the human visual system performs significant data reduction from the large number of photoreceptors to the optic nerve, effectively encoding visual informatio",
+    "pdf_url": "https://arxiv.org/pdf/2407.07052v2",
+    "arxiv_id": "2407.07052v2"
+  },
+  {
+    "title": "White paper for Chandra cool attitude targets (CAT): Stellar activity with TESS and Chandra",
+    "authors": [
+      "Hans Moritz G\u00fcnther",
+      "David A. Principe",
+      "Carl Melis"
+    ],
+    "year": 2019,
+    "abstract": "All cool stars show magnetic activity, and X-ray emission is the hallmark of this activity. Gaining an understanding of activity aids us in answering fundamental questions about stellar astrophysics and in determining the impact of activity on the exoplanets that orbit these stars. Stellar activity ",
+    "pdf_url": "https://arxiv.org/pdf/1903.01547v1",
+    "arxiv_id": "1903.01547v1"
+  },
+  {
+    "title": "Latent-Reframe: Enabling Camera Control for Video Diffusion Model without Training",
+    "authors": [
+      "Zhenghong Zhou",
+      "Jie An",
+      "Jiebo Luo"
+    ],
+    "year": 2024,
+    "abstract": "Precise camera pose control is crucial for video generation with diffusion models. Existing methods require fine-tuning with additional datasets containing paired videos and camera pose annotations, which are both data-intensive and computationally costly, and can disrupt the pre-trained model distr",
+    "pdf_url": "https://arxiv.org/pdf/2412.06029v1",
+    "arxiv_id": "2412.06029v1"
+  },
+  {
+    "title": "A Discrete-Time Attitude Observer on SO(3) for Vision and GPS Fusion",
+    "authors": [
+      "Alireza Khosravian",
+      "Tat-Jun Chin",
+      "Ian Reid"
+    ],
+    "year": 2017,
+    "abstract": "This paper proposes a discrete-time geometric attitude observer for fusing monocular vision with GPS velocity measurements. The observer takes the relative transformations obtained from processing monocular images with any visual odometry algorithm and fuses them with GPS velocity measurements. The ",
+    "pdf_url": "https://arxiv.org/pdf/1704.00888v1",
+    "arxiv_id": "1704.00888v1"
+  },
+  {
+    "title": "Vendi-RAG: Adaptively Trading-Off Diversity And Quality Significantly Improves Retrieval Augmented Generation With LLMs",
+    "authors": [
+      "Mohammad Reza Rezaei",
+      "Adji Bousso Dieng"
+    ],
+    "year": 2025,
+    "abstract": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) for domain-specific question-answering (QA) tasks by leveraging external knowledge sources. However, traditional RAG systems primarily focus on relevance-based retrieval and often struggle with redundancy, especially when rea",
+    "pdf_url": "https://arxiv.org/pdf/2502.11228v2",
+    "arxiv_id": "2502.11228v2"
+  },
+  {
+    "title": "OmniDocLayout: Towards Diverse Document Layout Generation via Coarse-to-Fine LLM Learning",
+    "authors": [
+      "Hengrui Kang",
+      "Zhuangcheng Gu",
+      "Zhiyuan Zhao"
+    ],
+    "year": 2025,
+    "abstract": "Document AI has advanced rapidly and is attracting increasing attention. Yet, while most efforts have focused on document layout analysis (DLA), its generative counterpart, layout generation, remains underexplored. Distinct from traditional graphic layout design and room layout planning, document la",
+    "pdf_url": "https://arxiv.org/pdf/2510.26213v2",
+    "arxiv_id": "2510.26213v2"
+  },
+  {
+    "title": "Systematic Evaluation of LLM-as-a-Judge in LLM Alignment Tasks: Explainable Metrics and Diverse Prompt Templates",
+    "authors": [
+      "Hui Wei",
+      "Shenghua He",
+      "Tian Xia"
+    ],
+    "year": 2024,
+    "abstract": "LLM-as-a-Judge has been widely applied to evaluate and compare different LLM alignmnet approaches (e.g., RLHF and DPO). However, concerns regarding its reliability have emerged, due to LLM judges' biases and inconsistent decision-making. Previous research has developed evaluation frameworks to asses",
+    "pdf_url": "https://arxiv.org/pdf/2408.13006v2",
+    "arxiv_id": "2408.13006v2"
+  },
+  {
+    "title": "Northeastern Uni at Multilingual Counterspeech Generation: Enhancing Counter Speech Generation with LLM Alignment through Direct Preference Optimization",
+    "authors": [
+      "Sahil Wadhwa",
+      "Chengtian Xu",
+      "Haoming Chen"
+    ],
+    "year": 2024,
+    "abstract": "The automatic generation of counter-speech (CS) is a critical strategy for addressing hate speech by providing constructive and informed responses. However, existing methods often fail to generate high-quality, impactful, and scalable CS, particularly across diverse linguistic contexts. In this pape",
+    "pdf_url": "https://arxiv.org/pdf/2412.15453v1",
+    "arxiv_id": "2412.15453v1"
+  },
+  {
+    "title": "Demystifying AI Platform Design for Distributed Inference of Next-Generation LLM models",
+    "authors": [
+      "Abhimanyu Bambhaniya",
+      "Ritik Raj",
+      "Geonhwa Jeong"
+    ],
+    "year": 2024,
+    "abstract": "Large language models (LLMs) have shown remarkable performance across a wide range of applications, often outperforming human experts. However, deploying these gigantic models efficiently for diverse inference use cases requires carefully designed hardware platforms with ample computing, memory, and",
+    "pdf_url": "https://arxiv.org/pdf/2406.01698v3",
+    "arxiv_id": "2406.01698v3"
+  },
+  {
+    "title": "Egocentric Visitors Localization in Cultural Sites",
+    "authors": [
+      "Francesco Ragusa",
+      "Antonino Furnari",
+      "Sebastiano Battiato"
+    ],
+    "year": 2019,
+    "abstract": "We consider the problem of localizing visitors in a cultural site from egocentric (first person) images. Localization information can be useful both to assist the user during his visit (e.g., by suggesting where to go and what to see next) and to provide behavioral information to the manager of the ",
+    "pdf_url": "https://arxiv.org/pdf/1904.05264v1",
+    "arxiv_id": "1904.05264v1"
+  },
+  {
+    "title": "Learning Robust Real-Time Cultural Transmission without Human Data",
+    "authors": [
+      "Cultural General Intelligence Team",
+      "Avishkar Bhoopchand",
+      "Bethanie Brownfield"
+    ],
+    "year": 2022,
+    "abstract": "Cultural transmission is the domain-general social skill that allows agents to acquire and use information from each other in real-time with high fidelity and recall. In humans, it is the inheritance process that powers cumulative cultural evolution, expanding our skills, tools and knowledge across ",
+    "pdf_url": "https://arxiv.org/pdf/2203.00715v1",
+    "arxiv_id": "2203.00715v1"
+  },
+  {
+    "title": "The Extended Evolutionary Synthesis Facilitates Evolutionary Models of Culture Change",
+    "authors": [
+      "Cameron M. Smith",
+      "Liane Gabora",
+      "William Gardner-O'Kearney"
+    ],
+    "year": 2018,
+    "abstract": "The Extended Evolutionary Synthesis (EES) is beginning to fulfill the whole promise of Darwinian insight through its extension of evolutionary understanding from the biological domain to include cultural information evolution. Several decades of important foundation-laying work took a social Darwini",
+    "pdf_url": "https://arxiv.org/pdf/1812.00143v4",
+    "arxiv_id": "1812.00143v4"
+  },
+  {
+    "title": "A rich bounty of AGN in the 9 square degree Bootes survey: high-z obscured AGN and large-scale structure",
+    "authors": [
+      "R. C. Hickox",
+      "C. Jones",
+      "W. R. Forman"
+    ],
+    "year": 2006,
+    "abstract": "We use observations from the 9 square degree multiwavelength survey in Bootes to identify hundreds of obscured active galactic nuclei (AGN) with high redshifts (z > 0.7), luminosities (L_bol > 10^45 ergs/s), and moderate obscuring columns (N_H > 10^22 cm^-2), and to measure the clustering properties",
+    "pdf_url": "https://arxiv.org/pdf/astro-ph/0611654v1",
+    "arxiv_id": "0611654v1"
+  },
+  {
+    "title": "Hanfu-Bench: A Multimodal Benchmark on Cross-Temporal Cultural Understanding and Transcreation",
+    "authors": [
+      "Li Zhou",
+      "Lutong Yu",
+      "Dongchu Xie"
+    ],
+    "year": 2025,
+    "abstract": "Culture is a rich and dynamic domain that evolves across both geography and time. However, existing studies on cultural understanding with vision-language models (VLMs) primarily emphasize geographic diversity, often overlooking the critical temporal dimensions. To bridge this gap, we introduce Hanf",
+    "pdf_url": "https://arxiv.org/pdf/2506.01565v3",
+    "arxiv_id": "2506.01565v3"
+  },
+  {
+    "title": "Does Mapo Tofu Contain Coffee? Probing LLMs for Food-related Cultural Knowledge",
+    "authors": [
+      "Li Zhou",
+      "Taelin Karidi",
+      "Wanlong Liu"
+    ],
+    "year": 2024,
+    "abstract": "Recent studies have highlighted the presence of cultural biases in Large Language Models (LLMs), yet often lack a robust methodology to dissect these phenomena comprehensively. Our work aims to bridge this gap by delving into the Food domain, a universally relevant yet culturally diverse aspect of h",
+    "pdf_url": "https://arxiv.org/pdf/2404.06833v3",
+    "arxiv_id": "2404.06833v3"
+  },
+  {
+    "title": "The Methanol Multibeam Survey",
+    "authors": [
+      "J. A. Green",
+      "the Methanol Multibeam Survey Collaboration"
+    ],
+    "year": 2012,
+    "abstract": "A purpose built 7-beam methanol receiver, installed on the Parkes Radio Telescope, was used to survey the Galactic plane for newly forming high mass stars, pinpointed by strong methanol maser emission at 6.7 GHz. The Methanol Multibeam (MMB) survey observed over 60% of the Galactic plane, detecting ",
+    "pdf_url": "https://arxiv.org/pdf/1210.0979v1",
+    "arxiv_id": "1210.0979v1"
+  },
+  {
+    "title": "The Dark Energy Survey",
+    "authors": [
+      "The Dark Energy Survey Collaboration"
+    ],
+    "year": 2005,
+    "abstract": "We describe the Dark Energy Survey (DES), a proposed optical-near infrared survey of 5000 sq. deg of the South Galactic Cap to ~24th magnitude in SDSS griz, that would use a new 3 sq. deg CCD camera to be mounted on the Blanco 4-m telescope at Cerro Telolo Inter-American Observatory (CTIO). The surv",
+    "pdf_url": "https://arxiv.org/pdf/astro-ph/0510346v1",
+    "arxiv_id": "0510346v1"
+  },
+  {
+    "title": "Stellar atmospheric parameters and the Gaia-ESO Survey experience with multiple analysis pipelines",
+    "authors": [
+      "R. Smiljanic",
+      "A. J. Korn",
+      "A. R. Casey"
+    ],
+    "year": 2017,
+    "abstract": "To use libraries of observed stellar spectra, one needs to know the atmospheric parameters of the stars associated to those spectra. It is, however, hard to know what are the real levels of precision and accuracy of these parameters. To overcome this very same problem in a stellar survey, the Gaia-E",
+    "pdf_url": "https://arxiv.org/pdf/1709.05076v1",
+    "arxiv_id": "1709.05076v1"
+  },
+  {
+    "title": "DES Y3 + KiDS-1000: Consistent cosmology combining cosmic shear surveys",
+    "authors": [
+      "Dark Energy Survey",
+      "Kilo-Degree Survey Collaboration",
+      ":"
+    ],
+    "year": 2023,
+    "abstract": "We present a joint cosmic shear analysis of the Dark Energy Survey (DES Y3) and the Kilo-Degree Survey (KiDS-1000) in a collaborative effort between the two survey teams. We find consistent cosmological parameter constraints between DES Y3 and KiDS-1000 which, when combined in a joint-survey analysi",
+    "pdf_url": "https://arxiv.org/pdf/2305.17173v2",
+    "arxiv_id": "2305.17173v2"
+  },
+  {
+    "title": "Is Sora a World Simulator? A Comprehensive Survey on General World Models and Beyond",
+    "authors": [
+      "Zheng Zhu",
+      "Xiaofeng Wang",
+      "Wangbo Zhao"
+    ],
+    "year": 2024,
+    "abstract": "General world models represent a crucial pathway toward achieving Artificial General Intelligence (AGI), serving as the cornerstone for various applications ranging from virtual environments to decision-making systems. Recently, the emergence of the Sora model has attained significant attention due ",
+    "pdf_url": "https://arxiv.org/pdf/2405.03520v2",
+    "arxiv_id": "2405.03520v2"
+  },
+  {
+    "title": "The Gaia-ESO Survey: calibration strategy",
+    "authors": [
+      "E. Pancino",
+      "the Gaia-ESO Survey collaboration"
+    ],
+    "year": 2016,
+    "abstract": "The Gaia-ESO survey (GES) is now in its fifth and last year of observations, and has already produced tens of thousands of high-quality spectra of stars in all Milky Way components. This paper presents the strategy behind the selection of astrophysical calibration targets, ensuring that all GES resu",
+    "pdf_url": "https://arxiv.org/pdf/1610.06480v1",
+    "arxiv_id": "1610.06480v1"
+  },
+  {
+    "title": "The SAMI Galaxy Survey: first 1000 galaxies",
+    "authors": [
+      "J. T. Allen",
+      "the SAMI Galaxy Survey Team"
+    ],
+    "year": 2014,
+    "abstract": "The Sydney-AAO Multi-object Integral field spectrograph (SAMI) Galaxy Survey is an ongoing project to obtain integral field spectroscopic observations of ~3400 galaxies by mid-2016. Including the pilot survey, a total of ~1000 galaxies have been observed to date, making the SAMI Galaxy Survey the la",
+    "pdf_url": "https://arxiv.org/pdf/1409.4147v1",
+    "arxiv_id": "1409.4147v1"
+  },
+  {
+    "title": "3D and 4D World Modeling: A Survey",
+    "authors": [
+      "Lingdong Kong",
+      "Wesley Yang",
+      "Jianbiao Mei"
+    ],
+    "year": 2025,
+    "abstract": "World modeling has become a cornerstone in AI research, enabling agents to understand, represent, and predict the dynamic environments they inhabit. While prior work largely emphasizes generative methods for 2D image and video data, they overlook the rapidly growing body of work that leverages nativ",
+    "pdf_url": "https://arxiv.org/pdf/2509.07996v3",
+    "arxiv_id": "2509.07996v3"
+  },
+  {
+    "title": "A Survey: Learning Embodied Intelligence from Physical Simulators and World Models",
+    "authors": [
+      "Xiaoxiao Long",
+      "Qingrui Zhao",
+      "Kaiwen Zhang"
+    ],
+    "year": 2025,
+    "abstract": "The pursuit of artificial general intelligence (AGI) has placed embodied intelligence at the forefront of robotics research. Embodied intelligence focuses on agents capable of perceiving, reasoning, and acting within the physical world. Achieving robust embodied intelligence requires not only advanc",
+    "pdf_url": "https://arxiv.org/pdf/2507.00917v3",
+    "arxiv_id": "2507.00917v3"
+  },
+  {
+    "title": "Roman Galactic Plane Survey Definition Committee Report",
+    "authors": [
+      "Roman Galactic Plane Survey Definition Committee"
+    ],
+    "year": 2025,
+    "abstract": "The Roman Galactic Plane Survey (RGPS) is a 700-hour program approved for early definition as a community-designed General Astrophysics Survey. It was selected following a proposal call for science programs that would benefit from an early community-based definition (Sanderson et al 2024). The commu",
+    "pdf_url": "https://arxiv.org/pdf/2511.07494v1",
+    "arxiv_id": "2511.07494v1"
+  }
+]

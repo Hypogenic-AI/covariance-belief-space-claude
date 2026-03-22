@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "stages": {
+    "resource_finder": {
+      "success": true,
+      "completion_marker": "/workspaces/covariance-belief-space-claude/.resource_finder_complete",
+      "outputs": {
+        "literature_review": "/workspaces/covariance-belief-space-claude/literature_review.md",
+        "resources_catalog": "/workspaces/covariance-belief-space-claude/resources.md",
+        "papers_dir": "/workspaces/covariance-belief-space-claude/papers",
+        "datasets_dir": "/workspaces/covariance-belief-space-claude/datasets",
+        "code_dir": "/workspaces/covariance-belief-space-claude/code"
+      },
+      "log_file": "/workspaces/covariance-belief-space-claude/logs/resource_finder_claude.log",
+      "transcript_file": "/workspaces/covariance-belief-space-claude/logs/resource_finder_claude_transcript.jsonl",
+      "elapsed_time": 829.4039778709412
+    },
+    "experiment_runner": {
+      "success": true,
+      "return_code": 0,
+      "elapsed_time": 780.945384979248,
+      "log_file": "/workspaces/covariance-belief-space-claude/logs/execution_claude.log",
+      "transcript_file": "/workspaces/covariance-belief-space-claude/logs/execution_claude_transcript.jsonl"
+    }
+  },
+  "work_dir": "/workspaces/covariance-belief-space-claude"
+}
