@@ -1,0 +1,24 @@
+idea:
+  title: Covariance in Belief Space
+  domain: machine_learning
+  hypothesis: 'Generating a diverse set of 10,000 beliefs and analyzing their covariance
+    in belief space will reveal which beliefs covary with each other and how many
+    are needed to explain 90% of the variance, potentially via PCA.
+
+    '
+  background:
+    description: 'Generate 10,000 beliefs. Make them as diverse as you can. Put one
+      in the context window. Test the others randomly. Which beliefs covary with each
+      other? How many beliefs do you need to explain 90% of the variance? If we do
+      it on the full set, we can do PCA in belief space.
+
+      '
+  metadata:
+    author: Ari Holtzman
+    source: IdeaHub
+    source_url: https://hypogenic.ai/ideahub/idea/Z6lcNuOFAhgYzu1mtT2h
+    idea_id: covariance_in_belief_space_20260322_110906_211d96b5
+    created_at: '2026-03-22T11:09:06.925295'
+    status: submitted
+    github_repo_name: covariance-belief-space-claude
+    github_repo_url: https://github.com/Hypogenic-AI/covariance-belief-space-claude
